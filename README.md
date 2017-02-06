@@ -1,1 +1,3 @@
-Der Sourcecode des Passwortcheck wird Anfang Februar hochgeladen.
+# Passwordcheck
+
+Die Icons wurden aus Copyright Gründen ausgetauscht.

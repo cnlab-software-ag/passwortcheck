@@ -1,0 +1,44 @@
+<div class="row">
+  <div class="col-xs-10">
+    <div class="row">
+      <div class="col-xs-1">
+        <div class="row">
+          <div class="col-xs-9"
+               appLogoBlock
+               [backgroundColor]="'#BEC4C8'"
+               [height]="logo.clientHeight + 'px'">
+          </div>
+          <div class="col-xs-3"
+               appLogoBlock
+               [backgroundColor]="'#FFFFFF'"
+               [height]="logo.clientHeight + 'px'">
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-9 logo-text"
+           appLogoBlock
+           [backgroundColor]="'#2B6B8F'"
+           [height]="logo.clientHeight + 'px'"
+           [appLogoText]="(logo.clientHeight/8) + 'px'">
+        Passwortcheck
+      </div>
+      <div class="col-xs-1">
+        <div class="row">
+          <div class="col-xs-3"
+               appLogoBlock
+               [backgroundColor]="'#FFFFFF'"
+               [height]="logo.clientHeight + 'px'">
+          </div>
+          <div class="col-xs-9"
+             appLogoBlock
+             [backgroundColor]="'#BEC4C8'"
+             [height]="logo.clientHeight + 'px'">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+	<div class="col-xs-2"  [style.cursor]="'pointer'">
+    <a href="https://www.passwortcheck.ch" border="0" target="_blank"><img src="./assets/logo.png" class="img-responsive" width="100%" #logo (window:resize)="0"></a>
+  </div>
+</div>

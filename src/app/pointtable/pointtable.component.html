@@ -1,0 +1,49 @@
+<table class="table table-sm">
+  <thead>
+  <tr>
+    <th style="width: 20%">Kriterium</th>
+    <th style="width: 50%">Messung</th>
+    <th style="width: 10%">Punkte</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>Länge des Passworts ({{ metrics.password.length }})</td>
+    <td>5 Punkte pro Zeichen</td>
+    <td>{{ metrics.pwlengthPoints() }}</td>
+  </tr>
+  <tr>
+    <td>{{ metrics.inWordbookPoints() / 3 * -1 }} Zeichen im Wörterbuch gefunden</td>
+    <td>-3 Punkte pro Zeichen</td>
+    <td>{{ metrics.inWordbookPoints() }}</td>
+  </tr>
+  <tr>
+    <td colspan="3">Bewertung der übrigen Zeichen, welche nicht in der Wörterliste vorkommen.</td>
+  </tr>
+  <tr>
+    <td>Kleinbuchstaben</td>
+    <td>{{ metrics.lowerLetterPoints }} Punkte, falls Kleinbuchstaben vorhanden</td>
+    <td>{{ metrics.getLowerLetterPoints() }}</td>
+  </tr>
+  <tr>
+    <td>Grossbuchstaben</td>
+    <td>{{ metrics.upperLetterPoints }} Punkte, falls Grossbuchstaben vorhanden</td>
+    <td>{{ metrics.getUpperLetterPoints() }}</td>
+  </tr>
+  <tr>
+    <td>Zahlen</td>
+    <td>{{ metrics.numberPoints }} Punkte, falls Zahlen vorhanden</td>
+    <td>{{ metrics.getNumberPoints() }}</td>
+  </tr>
+  <tr>
+    <td>Sonderzeichen</td>
+    <td>{{ metrics.specialCharPoints }} Punkte, falls Sonderzeichen vorhanden</td>
+    <td>{{ metrics.getSpecialCharPoints() }}</td>
+  </tr>
+  <tr>
+    <td [style.font-weight]="'bold'">Total Punkte</td>
+    <td></td>
+    <td [style.color]="metrics.totalPointsStyle()" [style.font-weight]="'bold'">{{ metrics.totalPoints() }}</td>
+  </tr>
+  </tbody>
+</table>

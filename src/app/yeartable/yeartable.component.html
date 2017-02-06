@@ -1,0 +1,47 @@
+<div class="row">
+  <div class="col-xs-12">
+    <table class="table table-sm">
+    <thead>
+    <tr>
+      <th>Teilwörter</th>
+      <th class="hidden-xs">Länge</th>
+      <th>Typ</th>
+      <th class="hidden-xs"><span appTooltip title="Grösse des Zeichensatzes bzw. Anzahl der Wörter im Wörterbuch, je nach Typ.">Raumgrösse</span></th>
+      <th class="hidden-xs"><span appTooltip title="Anzahl der möglichen Kombinationen für dieses Teilwort.">Anzahl Versuche</span></th>
+      <th><span appTooltip title="Die Entropie ist ein Mass für die Zufälligkeit eines Texts. Je höher die Entropie, desto mehr Versuche sind nötig für das Erraten des Texts.">Entropie</span></th>
+      <th><span appTooltip title="Rechenzeit unter der Annahme, dass der Angreifer fünf Milliarden Versuche pro Sekunde durchführen kann. Dies entspricht einem aktuellen Heim-PC mit spezialisierter Software.">Rechenzeit</span></th>
+    </tr>
+    </thead>
+    <tbody>
+
+    <tr *ngFor="let item of metrics.allWords()">
+      <td *ngIf="showpassword">
+        <span *ngIf="item.showToolTip()" appTooltip
+              title="In Klammern steht die normalisierte Version des Teilwortes, welche im Wörterbuch enthalten ist.">
+          {{ item.displayedWord() }}
+        </span>
+        <span *ngIf="!item.showToolTip()">
+          {{ item.displayedWord() }}
+        </span>
+      </td>
+      <td *ngIf="!showpassword">***</td>
+      <td class="hidden-xs">{{ item.length }}</td>
+      <td>{{ item.source }}</td>
+      <td class="hidden-xs">{{ item.roomSize | bigNumberFormat }}</td>
+      <td class="hidden-xs">{{ item.numberOfAttemps() | bigNumberFormat }}</td>
+      <td>{{ item.entropie() | bigNumberFormat }} Bit</td>
+      <td></td>
+    </tr>
+
+    <tr>
+      <td colspan="4" class="hidden-xs"><b>Aufwandschätzung</b></td>
+      <td colspan="2" class="visible-xs"><b>Aufwandschätzung</b></td>
+      <td class="hidden-xs">{{ metrics.numberOfAttemps() | bigNumberFormat }}</td>
+      <td>{{ metrics.entropie() | bigNumberFormat }} Bit</td>
+      <td [style.color]="metrics.timeToBreakColor()" [style.font-weight]="'bold'">{{ metrics.timeToBreak() | timeAsText }}</td>
+    </tr>
+
+    </tbody>
+    </table>
+  </div>
+</div>

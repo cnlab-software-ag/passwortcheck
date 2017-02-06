@@ -1,0 +1,15 @@
+Die Wörterbücher für Deutsch, Französisch und Italienisch basieren auf den
+Rechtschreibwörterbüchern für Debian Linux. Da diese Wörterbücher beim
+Passwortcheck nicht zur Rechtschreibprüfung gebraucht werden, wurden sie auf den
+Zweck der Passwortprüfung optimiert.
+Die Urheber und Lizenzen der ursprünglichen Wörterbücher sind in den folgenden
+Dateien aufgeführt:
+
+copyright-wswiss.txt
+copyright-wfrench.txt
+copyright-witalian.txt
+copyright-wamerican.txt
+
+Die übrigen Wörterbücher und Wortlisten wurden im Rahmen des Passwortchecks von
+der cnlab ag zusammengestellt und fallen unter dieselbe Lizenz wie der
+Quellcode.

@@ -1,0 +1,120 @@
+img {
+    margin-top: 2%;
+    width: 50%;
+}
+
+.active {
+    opacity: 0.7;
+}
+
+.nopadding-left {
+    padding-left: 0px;
+}
+.nopadding {
+    padding: 0px;
+}
+
+.sidebar-button-blue {
+    background-color: #2B6B8F;
+}
+.sidebar-button-yellow {
+    background-color: #F1E845;
+}
+.sidebar-button-pink {
+    background-color: #DE007B;
+}
+.sidebar-button-green {
+    background-color: #81C64C;
+}
+
+.sidebar-button-grey {
+    background-color: #656963;
+}
+
+@media (max-width: 767px) {
+    .sidebar-button {
+        cursor: pointer;
+        height: 10%;
+        text-align: center;
+        color: white;
+        padding: 0px;
+        width: 20%;
+        float: left;
+    }
+    .sidebar-icon {
+        width: 90%;
+        margin-left: 28%;
+        margin-right: 28%;
+    }
+    .sidebar-text {
+        color: white;
+        font-size: 8px;
+    }
+
+    .sidebar-button-left {
+        margin-left: 15px;
+        margin-right: 0px;
+    }
+    .sidebar-button-middle {
+        margin-left: 15px;
+        margin-right: 0px;
+    }
+    .sidebar-button-right {
+        margin-left: 15px;
+        margin-right: 0px;
+    }
+}
+
+@media (min-width: 768px) {
+    .sidebar-button {
+        cursor: pointer;
+        height: 10%;
+        text-align: center;
+        color: white;
+        width: 100%;
+        float: none;
+	}
+    .sidebar-icon {
+        width: 100%;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+}
+
+@media (min-width: 992px) {
+    .sidebar-button {
+        margin-bottom: 10px;
+        cursor: pointer;
+        height: 10%;
+        text-align: center;
+    }
+    .sidebar-icon {
+        width: 80%;
+        margin-left: 31%;
+        margin-right: 31%;
+    }
+    .sidebar-text {
+        color: white;
+        height: 30px;
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .sidebar-button {
+        cursor: pointer;
+        height: 10%;
+        text-align: center;
+    }
+    .sidebar-icon {
+        width: 70%;
+        margin-left: 33%;
+        margin-right: 33%;
+    }
+
+    .sidebar-text {
+        color: white;
+        height: 30px;
+        font-size: 20px;
+    }
+}
