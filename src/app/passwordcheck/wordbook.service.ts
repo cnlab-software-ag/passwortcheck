@@ -12,6 +12,7 @@ export class WordbookService {
     new Wordbook("Sequenz", "Sequenz", "sequences.txt", [], true, false, false),
     new Wordbook("Tastatur", "Tastatur", "keyboard.txt", [], true, false, false),
     new Wordbook("Namensliste", "Namensliste", "surnames.txt", [], true, false, false),
+    new Wordbook("Passwortliste", "Passwortliste", "passwordlist.txt", [], true, false, false),
     new Wordbook("Deutsch", "Wort (Deutsch)", "swiss.txt", [], true, true, true),
     new Wordbook("Französisch", "Wort (Französisch)", "french.txt", [], false, true, true),
     new Wordbook("Italienisch", "Wort (Italienisch)", "italian.txt", [], false, true, true),
