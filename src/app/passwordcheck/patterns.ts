@@ -1,7 +1,7 @@
 export class Pattern {
   static digits: RegExp = (/\d+/);
-  static lowerChars: RegExp = (/[a-z,ä,ö,ü]/);
-  static upperChars: RegExp = (/[A-Z,Ä,Ö,Ü]/);
+  static lowerChars: RegExp = (/[a-zäöü]/);
+  static upperChars: RegExp = (/[A-ZÄÖÜ]/);
   static specialChars: RegExp = (/[\+\"\*\ч\%\&\/\(\)\=\?\!\г\$\@\#\в\з\-\;\:\<\>\\\[\]\{\}\.\,\'\`\^\°\§\ \_\ç\€\£]/);
 
   static numbersAsLetter: { [key:string]:string }  = {
