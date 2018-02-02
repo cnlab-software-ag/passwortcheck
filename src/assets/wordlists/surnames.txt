@@ -4196,6 +4196,7 @@ höllig
 holliger
 hollinger
 hollmann
+holmes
 holthausen
 höltschi
 holy
@@ -8450,6 +8451,7 @@ seyfert
 seyfried
 sfiliniotis
 shann
+sherlock
 siagini
 siano
 sibbern
@@ -9757,6 +9759,7 @@ wasserthal
 wasservogel
 wassmer
 wassner
+watson
 watzlawich
 wazek
 weber
