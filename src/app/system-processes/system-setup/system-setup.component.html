@@ -1,23 +1,23 @@
 <div class="row">
   <div class="col-xs-12">
-    <p>Der Passwortcheck besteht aus den folgenden Komponenten; Webserver, Passwortcheck-Applikation und einer Datenbank.
+    <p>Der Passwortcheck besteht aus den Komponenten Webserver, Passwortcheck-Applikation und einer Datenbank.
 	<!--<p><img src="./assets/systemsetup.png" alt="Abbildung 1: Systemaufbau" class="img-responsive" width="100%" #logo (window:resize)="0"></p>-->
 	<h4>Webserver</h4>
 	<p>Der Webserver stellt die Schnittstelle zur Benutzerin oder zum Benutzer dar. Er stellt den Passwortcheck bereit und verwaltet die Statistiken in einer Datenbank und stellt sie als Webseiten dar.</p>
     <h4>Passwortcheck-Applikation</h4>
-	<p>Der Passwortcheck ist das Herzstück der Anwendung und dient dazu, die Stärke eines eingegebenen Passworts abzuschätzen. Der Passwortcheck ist in <a href="https://de.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript</a> implementiert. JavaScript-Programme werden vom Browser geladen und auf dem Rechner der Benutzerin oder des Benutzers ausgeführt. Daher werden keine zu prüfenden Passwörter oder andere private Nutzerdaten an den Server gesendet. Alle Berechnungen finden auf dem Rechner der Benutzerin oder des Benutzers statt. Mit dem Schliessen des Browsers werden die Daten gelöscht. Um eine Statistik über die Häufigkeit von starken und schwachen Passwörtern zu erstellen, schickt das JavaScript das Ergebnis an den Server. Hier wird nur übertragen, ob das Ergebnis «<font color="#66cc66"><b>stark</b></font>» oder «<font color="#ff6666"><b>schwach</b></font>» herauskam.
+	<p>Der Passwortcheck ist das Herzstück der Anwendung und dient dazu, die Stärke eines eingegebenen Passworts abzuschätzen. Der Passwortcheck ist in <a href="https://de.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript</a> implementiert. JavaScript-Programme werden vom Browser geladen und auf dem Rechner der Benutzerin oder des Benutzers ausgeführt. Daher werden keine zu prüfenden Passwörter oder andere private Nutzerdaten an den Server gesendet. Alle Berechnungen finden auf dem Rechner der Benutzerin oder des Benutzers statt. Mit dem Schliessen des Browsers werden die Daten gelöscht. Um eine Statistik über die Häufigkeit von starken und schwachen Passwörtern zu erstellen, schickt das JavaScript das Ergebnis an den Server. Hier wird nur übertragen, ob das Ergebnis <font color="#66cc66"><b>stark</b></font> oder <font color="#ff6666"><b>schwach</b></font> herauskam.
 	<p>Die Prüfung des eingegebenen Passworts findet nach folgenden Richtlinien statt:</p>
 	<ul>
-	<li>Optimallänge ist 10 Zeichen</li>
+	<li>Passwortlänge</li>
 	<li>Kleinbuchstaben</li>
 	<li>Grossbuchstaben</li>
 	<li>Interpunktions- oder Sonderzeichen</li>
 	<li>Ziffern</li>
-	<li>Keine Zeichenfolge (z.B. Abzug bei «sss», Tastaturfolgen «qwertz», ABC-Buchstaben oder und Zahlenreihenfolgen)</li>
+	<li>Keine Zeichenfolge (zum Beispiel Abzug bei «sss», Tastaturfolgen «qwertz», ABC-Buchstaben oder und Zahlenreihenfolgen)</li>
 	<li>Passwort ist nicht im definierten Wörterbuch auffindbar</li>
 	</ul>
 	<h4>Datenbank</h4>
-	<p>In der Datenbank werden Informationen über die Qualität («<font color="#66cc66"><b>stark</b></font>»/«<font color="#ff6666"><b>schwach</b></font>») des geprüften Passworts für statistische Zwecke gesammelt.</p>
+	<p>In der Datenbank werden Informationen über die Qualität (<font color="#66cc66"><b>stark</b></font> / <font color="#ff6666"><b>schwach</b></font>) des geprüften Passworts für statistische Zwecke gesammelt.</p>
 	<p><b>Dabei werden nur die Resultate der Überprüfung gespeichert. Die eingegebenen Passwörter werden nie an den Server übermittelt.</b></p>
   </div>
 </div>
