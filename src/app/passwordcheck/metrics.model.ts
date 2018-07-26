@@ -18,7 +18,7 @@ export class Metrics {
 
   pointLimit = 100;
   timeLimit = 31536000;
-  passwordCracksPerSeconds = 5000000000;
+  passwordCracksPerSeconds = 5000000000; // Berechnungen pro Sekunde
 
   pwlengthPoints(){
     return this.password.length * 5;
@@ -28,7 +28,7 @@ export class Metrics {
     let points = 0;
 
     Lazy(this.wordIndexes).each(function(word){
-      points -= word.length * 3
+      points -= word.length * 2 // Abzug für Passwort aus Wörterbuch vorher 3	
     });
 
     return points;
