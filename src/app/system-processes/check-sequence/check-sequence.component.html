@@ -1,17 +1,17 @@
 <div class="row">
   <div class="col-xs-12">
-    <p>Der Passwortcheck beurteilt die Stärke von Passwörtern aufgrund der Wahrscheinlichkeit der Anzahl benötigten Versuche eines Angreifer, um das Passwort herauszufinden.</p>
-    <p>In erster Linie hängt dies von der Länge des Passworts und dem verwendeten Zeichenumfang ab. Enthält ein Passwort bekannte Wörter, Zahlenreihen oder Tastaturmuster, kann sich dies ein cleverer Angreifer zunutze machen. Statt lange Zeichenketten zufällig durchzuprobieren, wird er zuerst versuchen, Wörter aus Wörterbüchern, Jahreszahlen, Tastaturmuster usw. zu probieren und zu kombinieren. Dies reduziert die Anzahl der Möglichkeiten stark.</p>
-    <p>Aus diesem Grund sucht der Passwortcheck nach den folgenden Bestandteilen:</p>
+    <p>Der Passwortcheck beurteilt die Stärke von Passwörtern aufgrund der Wahrscheinlichkeit der Anzahl benötigten Versuche einer Angreiferin oder eines Angreifers, um das Passwort herauszufinden.</p>
+    <p>In erster Linie hängt dies von der Länge des Passworts und dem verwendeten Zeichenumfang ab. Enthält ein Passwort bekannte Wörter, Zahlenreihen oder Tastaturmuster, kann sich dies eine clevere Angreiferin oder ein cleverer Angreifer zunutze machen. Statt lange Zeichenketten zufällig durchzuprobieren, wird sie oder er zuerst versuchen, Wörter aus Wörterbüchern, Jahreszahlen, Tastaturmuster und ähnliche zu probieren und zu kombinieren. Dies reduziert die Anzahl der benötigten Versuche stark.</p>
+    <p>Deshalb sucht der Passwortcheck nach den folgenden Bestandteilen:</p>
     <ul>
       <li>Wörter aus dem deutschen, französischen, italienischen, rätoromanischen und englisches Wörterbuch (je nach Auswahl der Benutzerin oder des Benutzers)</li>
-      <li>Tastaturmuster auf der Schweizer Tastatur (z.B. «qwertz»)</li>
-      <li>Zahlenreihen und alphabetische Folgen (z.B. «1234», «abcd»)</li>
-      <li>Datumsangaben (z.B. «24.12.2016»)</li>
+      <li>Tastaturmuster auf der Schweizer Tastatur (zum Beispiel «qwertz»)</li>
+      <li>Zahlenreihen und alphabetische Folgen (zum Beispiel «1234», «abcd»)</li>
+      <li>Datumsangaben (zum Beispiel «24.12.2016»)</li>
     </ul>
-    <p>Bei der Suche im Wörterbuch werden auch veränderte Gross- und Kleinschreibung und <a href="https://de.wikipedia.org/wiki/Leetspeak" target="_blank">«L33t»</a>«-Schreibung erkannt. So werden zum Beispiel «kaTZe», «H@us» und «B3tt» als Wörter gefunden.</p>
+    <p>Bei der Suche im Wörterbuch werden auch veränderte Gross- und Kleinschreibung und <a href="https://de.wikipedia.org/wiki/Leetspeak" target="_blank">«L33t»</a>-Schreibung erkannt. So werden zum Beispiel «kaTZe», «H@us» und «B3tt» als Wörter gefunden.</p>
     <p>Nachdem der Passwortcheck ein Passwort nach obigem Schema durchsucht hat, wendet er zwei verschiedene Bewertungsverfahren an. Beim ersten Test wird geprüft, ob das Passwort bestimmte Regeln (Länge, Zeichenumfang) erfüllt. Beim zweiten Test wird eine Schätzung berechnet, wie schwer es für einen Angreifer wäre, das Passwort zu knacken.</p>
-    <p>Die Gesamtwertung eines Passworts ist «<font color="#66cc66"><b>stark</b></font>», wenn es beide Tests besteht.</p>
+    <p>Die Gesamtwertung eines Passworts ist <font color="#66cc66"><b>stark</b></font>, wenn es beide Tests besteht.</p>
   </div>
   <div class="col-xs-12">
     <h4>Bewertung nach Regeln</h4>
@@ -21,13 +21,13 @@
       <li>5 Punkte für jedes Zeichen;</li>
       <li>je 15 Punkte, falls Gross- oder Kleinbuchstaben vorkommen;</li>
       <li>je 10 Punkte, falls Ziffern oder Sonderzeichen vorkommen;</li>
-      <li>3 Punkte Abzug für jedes Zeichen, das zu einem Wort aus einem Wörterbuch gehört bzw. ein Tastaturmuster oder eine Reihe ist.</li>
+      <li>2 Punkte Abzug für jedes Zeichen, das zu einem Wort aus einem Wörterbuch gehört beziehungsweise ein Tastaturmuster oder eine Reihe ist.</li>
     </ul>
-    <p>Ein Passwort muss in der Regelbewertung mindestens <font color="#66cc66"><b>100 Punkte</b></font> erreichen, um als «stark» beurteilt zu werden.</p>
+    <p>Ein Passwort muss in der Regelbewertung mindestens <font color="#66cc66"><b>100 Punkte</b></font> erreichen, um als <font color="#66cc66"><b>stark</b></font> beurteilt zu werden.</p>
   </div>
   <div class="col-xs-12">
     <h4>Bewertung nach Aufwandsschätzung</h4>
-    <p>Hier wird die wahrscheinliche Anzahl  Kombinationen berechnet, die ein Angreifer durchprobieren müsste, bis er das Passwort findet. Um dies zu schätzen, werden die oben genannten Wörterbuchwörter und Muster im Passwort gesucht und das Passwort dann in seine Bestandteile zerlegt.</p>
+    <p>Hier wird die wahrscheinliche Anzahl  Kombinationen berechnet, die eine Angreiferin oder ein Angreifer durchprobieren müsste, bis das Passwort gefunden ist. Um dies zu schätzen, werden die oben genannten Wörterbuchwörter und Muster im Passwort gesucht und das Passwort dann in seine Bestandteile zerlegt.</p>
     <div class="row">
       <div class="col-xs-12 col-md-10 col-lg-8">
       <img
@@ -35,13 +35,13 @@
         class="img-responsive">
       </div>
     </div>
-    <p>Für jedes Teilwort wird nun berechnet, wie viele Möglichkeiten ein Angreifer durchprobieren müsste:</p>
+    <p>Für jedes Teilwort wird nun berechnet, wie viele Möglichkeiten eine Angreiferin oder ein Angreifer durchprobieren müsste:</p>
     <ul>
-      <li>Für Wörter aus den geladenen Wörterbüchern ist die Anzahl der Möglichkeiten gleich der Grösse des Wörterbuchs. Aufgrund der Erkennung von Gross- und Kleinschreibung, sowie «L33t» wird die Grösse des eigentlichen Wörterbuchs mit dem Faktor 10 multipliziert.  </li>
+      <li>Für Wörter aus den geladenen Wörterbüchern ist die Anzahl der Möglichkeiten gleich der Grösse des Wörterbuchs. Aufgrund der Erkennung von Gross- und Kleinschreibung sowie «L33t» wird die Grösse des eigentlichen Wörterbuchs mit dem Faktor 10 multipliziert.  </li>
       <li>Für Tastaturmuster, Zahlenreihen und alphabetische Folgen ist es die Anzahl der jeweils möglichen Kombinationen.</li>
       <li>Für die übrigen Zeichen, in denen kein Wort oder Muster gefunden wurde, ergibt sich als Anzahl der Möglichkeiten <i>k</i><sup><i>n</i></sup>, wobei <i>k</i> die Anzahl der möglichen Zeichen und <i>n</i> die Länge ist.</li>
     </ul>
-    <p>Um den Aufwand in Zeit zu schätzen, wird angenommen, dass ein Angreifer fünf Milliarden Versuche pro Sekunde durchführen kann. Dies entspricht der Rechenleistung eines guten Heim-PC.</p>
-    <p>Ein Passwort muss einem Angreifer während einer Rechenzeit von <font color="#66cc66"><b>mehr als einem Jahr</b></font> standhalten, um als «stark» beurteilt zu werden.</p>
+    <p>Um den Aufwand in Zeit zu schätzen, wird angenommen, dass eine Angreiferin oder ein Angreifer fünf Milliarden Versuche pro Sekunde durchführen kann. Dies entspricht der Rechenleistung eines guten Heim-PC.</p>
+    <p>Ein Passwort muss einer Angreiferin oder einem Angreifer während einer Rechenzeit von <font color="#66cc66"><b>mehr als einem Jahr</b></font> standhalten, um als <font color="#66cc66"><b>stark</b></font> beurteilt zu werden.</p>
   </div>
 </div>
