@@ -1,5 +1,6 @@
 export class Wordbook {
   constructor(
+    public lang: string,
     public name: string,
     public source: string,
     public file: string,

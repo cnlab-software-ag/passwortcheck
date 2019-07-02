@@ -4,7 +4,7 @@ export class Pattern {
   static upperChars: RegExp = (/[A-ZÄÖÜ]/);
   static specialChars: RegExp = (/[\+\"\*\ч\%\&\/\(\)\=\?\!\г\$\@\#\в\з\-\;\:\<\>\\\[\]\{\}\.\,\'\`\^\°\§\ \_\ç\€\£]/);
 
-  static numbersAsLetter: { [key:string]:string }  = {
+  static numbersAsLetter: { [key: string]: string }  = {
     '4': 'A',
     '@': 'A',
     '8': 'B',

@@ -1,4 +1,4 @@
-import {PasswordPartial} from "./passwordPartial.model";
+import {PasswordPartial} from './passwordPartial.model';
 
 export class RemainingChars extends PasswordPartial {
 
@@ -10,17 +10,17 @@ export class RemainingChars extends PasswordPartial {
     roomSize: number
   ) {
     super(
-      "Zeichen",
+      'Zeichen',
       word,
       passwordStartIndex,
       passwordStopIndex,
       length,
       roomSize,
-      "übrige Zeichen"
+      'other'
     );
   }
 
-  numberOfAttemps(){
+  numberOfAttemps() {
     return Math.pow(this.roomSize, this.word.length);
   }
 

@@ -1,27 +1,32 @@
 import {Injectable, EventEmitter} from '@angular/core';
-import {Http} from "@angular/http";
+import {HttpClient} from '@angular/common/http';
 import * as Lazy from 'lazy.js';
-import 'rxjs/add/operator/map'
-import {Subscription} from "rxjs";
-import {Wordbook} from "./wordbook.model";
+import {Wordbook} from './wordbook.model';
+import {map} from 'rxjs/operators';
+import {Subscription} from 'rxjs/internal/Subscription';
 
 @Injectable()
 export class WordbookService {
   private availableWordbooks: Wordbook[] = [
-    new Wordbook("Datum", "Datum", "dates.txt", [], true, false, false),
-    new Wordbook("Sequenz", "Sequenz", "sequences.txt", [], true, false, false),
-    new Wordbook("Tastatur", "Tastatur", "keyboard.txt", [], true, false, false),
-    new Wordbook("Namensliste", "Namensliste", "surnames.txt", [], true, false, true),
-	new Wordbook("Passwortliste", "Passwortliste", "passwordlist.txt", [], true, false, false),
-    new Wordbook("Deutsch", "Wort (Deutsch)", "swiss.txt", [], true, true, true),
-    new Wordbook("Französisch", "Wort (Französisch)", "french.txt", [], false, true, true),
-    new Wordbook("Italienisch", "Wort (Italienisch)", "italian.txt", [], false, true, true),
-    new Wordbook("Rätoromanisch", "Wort (Rätoromanisch)", "romansh-experimental.txt", [], false, true, true),
-    new Wordbook("Englisch", "Wort (Englisch)", "english.txt", [], false, true, true)
+    new Wordbook('', 'datum', 'datum', 'dates.txt', [], true, false, false),
+    new Wordbook('', 'sequence', 'sequence', 'sequences.txt', [], true, false, false),
+    new Wordbook('', 'keyboard', 'keyboard', 'keyboard.txt', [], true, false, false),
+    new Wordbook('', 'nameList', 'nameList', 'surnames.txt', [], true, false, true),
+    new Wordbook('', 'passwordList', 'passwordList', 'passwordlist.txt', [], true, false, false),
+    new Wordbook('de', 'german', 'german', 'swiss.txt', [], true, true, true),
+    new Wordbook('fr', 'french', 'french', 'french.txt', [], false, true, true),
+    new Wordbook('it', 'italian', 'italian', 'italian.txt', [], false, true, true),
+    new Wordbook('rm', 'rhaetoRomansch', 'rhaetoRomansch', 'romansh-experimental.txt', [], false, true, true),
+    new Wordbook('en', 'english', 'english', 'english.txt', [], false, true, true)
   ];
   wordbookIsUpdating = new EventEmitter<boolean>();
 
-  constructor(private http: Http){}
+  constructor(private http: HttpClient) {}
+
+  setDefaultWordbook(lang: string) {
+    Lazy(this.availableWordbooks).filter((wordbook) => wordbook.lang !== '').each(wordbook => wordbook.active = false);
+    Lazy(this.availableWordbooks).filter((wordbook) => wordbook.lang === lang).each(wordbook => wordbook.active = true);
+  }
 
   getAvailableWordbooks() {
     return this.availableWordbooks;
@@ -35,15 +40,15 @@ export class WordbookService {
     return Lazy(this.availableWordbooks).filter((wordbook) => wordbook.displayed).toArray();
   }
 
-  getWordbook(name: string):Subscription {
+  getWordbook(name: string): Subscription {
     this.wordbookIsUpdating.emit(true);
-    let wordbook = Lazy(this.availableWordbooks).find((wordbook) => wordbook.name === name);
+    const wordbook = Lazy(this.availableWordbooks).find(current => current.name === name);
 
     if (wordbook.words.length <= 0) {
-      return this.http.get("assets/wordlists/" + wordbook.file)
-        .map(this.extractData)
-        .subscribe(
-          (loadedWordbook) => {
+      return this.http.get('assets/wordlists/' + wordbook.file, {responseType: 'text'}).pipe(
+        map(response => this.extractData(response))
+      ).subscribe(
+          loadedWordbook => {
             wordbook.words = loadedWordbook;
             this.wordbookIsUpdating.emit(false);
           });
@@ -53,9 +58,9 @@ export class WordbookService {
     return null;
   }
 
-  extractData(response):Array<string>{
-    let wordbook = response.text().split('\n');
-    return Lazy(wordbook).filter((item) => { return item !== ""}).sort().toArray();
+  extractData(response): Array<string> {
+    const wordbook: string[] = response.split(/\r?\n/);
+    return Lazy(wordbook).filter((item) => { return item !== ''}).sort().toArray();
   }
 
 }

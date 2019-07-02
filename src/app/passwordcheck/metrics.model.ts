@@ -1,12 +1,12 @@
 import * as Lazy from 'lazy.js';
 
 import {Pattern} from './patterns';
-import {RemainingChars} from "./remainingChars.model";
+import {RemainingChars} from './remainingChars.model';
 
 export class Metrics {
-  password = "";
+  password = '';
   wordIndexes = [];
-  remainingPasswordChars: RemainingChars = new RemainingChars("", 0, 0, 0, 0);
+  remainingPasswordChars: RemainingChars = new RemainingChars('', 0, 0, 0, 0);
 
   goodColor = '#66cc66';
   badColor = '#ff6666';
@@ -18,17 +18,17 @@ export class Metrics {
 
   pointLimit = 100;
   timeLimit = 31536000;
-  passwordCracksPerSeconds = 5000000000; // Berechnungen pro Sekunde
+  passwordCracksPerSeconds = 100000000000; // Berechnungen pro Sekunde
 
-  pwlengthPoints(){
+  pwlengthPoints() {
     return this.password.length * 5;
   }
 
-  inWordbookPoints(){
+  inWordbookPoints() {
     let points = 0;
 
-    Lazy(this.wordIndexes).each(function(word){
-      points -= word.length * 2 // Abzug für Passwort aus Wörterbuch vorher 3	
+    Lazy(this.wordIndexes).each(function(word) {
+      points -= word.length * 2 // Abzug für Passwort aus Wörterbuch vorher 3
     });
 
     return points;
@@ -60,21 +60,21 @@ export class Metrics {
   }
 
   totalPointsStyle() {
-    if(this.totalPoints() >= this.pointLimit) {
+    if (this.totalPoints() >= this.pointLimit) {
       return this.goodColor;
     }
     return this.badColor;
   }
 
   allWords() {
-    let allWords = this.wordIndexes.slice(0);
+    const allWords = this.wordIndexes.slice(0);
     if (this.remainingPasswordChars.length > 0) {
       allWords.push(this.remainingPasswordChars);
     }
     return allWords;
   }
 
-  numberOfAttemps(){
+  numberOfAttemps() {
     let product = 1;
     Lazy(this.allWords()).each((word) => { product *= word.numberOfAttemps(); });
     return product;
@@ -90,7 +90,7 @@ export class Metrics {
     return this.numberOfAttemps() / this.passwordCracksPerSeconds;
   }
 
-  timeToBreakColor(){
+  timeToBreakColor() {
     if (this.timeToBreak() >= this.timeLimit) {
       return this.goodColor;
     }

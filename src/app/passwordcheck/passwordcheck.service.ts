@@ -1,24 +1,24 @@
-import {Injectable} from "@angular/core";
-import {Http, Headers} from "@angular/http";
+import {Injectable} from '@angular/core';
 import * as Lazy from 'lazy.js';
 
-import {Pattern} from "./patterns";
+import {Pattern} from './patterns';
 
-import {Word} from "./word.model";
-import {Character} from "./characters.model";
-import {RemainingChars} from "./remainingChars.model";
-import {Wordbook} from "./wordbook.model";
-import {PasswordPartial} from "./passwordPartial.model";
+import {Word} from './word.model';
+import {Character} from './characters.model';
+import {RemainingChars} from './remainingChars.model';
+import {Wordbook} from './wordbook.model';
+import {PasswordPartial} from './passwordPartial.model';
+import {HttpClient, HttpHeaders} from '@angular/common/http';
 
 @Injectable()
 export class PasswordcheckService {
   timer = null;
 
-  constructor(private http: Http){}
+  constructor(private http: HttpClient) {}
 
-  normalizedPassword(password) {
-    let pwChars = Lazy(password).split('');
-    let result = [];
+  normalizedPassword(password: string) {
+    const pwChars = Lazy(password).split('');
+    const result = [];
     Lazy(pwChars).each(
       function (pwChar: string) {
         if (Lazy(Object.keys(Pattern.numbersAsLetter)).contains(pwChar)) {
@@ -32,41 +32,39 @@ export class PasswordcheckService {
   }
 
   getWordbookEntries(wordbooks: Wordbook[], userInput: string) {
-    let matrix: PasswordPartial[][] = this.computeMatrix(wordbooks, userInput);
+    const matrix: PasswordPartial[][] = this.computeMatrix(wordbooks, userInput);
     return this.findeShortestPath(matrix);
   }
 
   computeMatrix(wordbooks: Wordbook[], userInput: string) {
-    let matrix: PasswordPartial[][] = [];
-    for(let i = 0; i < userInput.length; i++){
+    const matrix: PasswordPartial[][] = [];
+    for (let i = 0; i < userInput.length; i++) {
       matrix[i] = [];
     }
 
     Lazy(wordbooks).each( (wordbook) => {
-      let charRoomSize = this.remainingCharRoomSize(userInput);
+      const charRoomSize = this.remainingCharRoomSize(userInput);
       let password = userInput;
       let normalizedRoomSizeMultiplier = 1;
-      if(wordbook.normalized){
+      if (wordbook.normalized) {
         password = this.normalizedPassword(userInput);
         normalizedRoomSizeMultiplier = 10;
       }
 
       for (let i = 0; i < password.length; i++) {
         for (let j = i; j < password.length; j++) {
-          let partialPassword = Lazy(password).substring(i, j + 1).toString();
-          let index = Lazy(wordbook.words).sortedIndex(partialPassword).toString();
+          const partialPassword = Lazy(password).substring(i, j + 1).toString();
+          const index = Lazy(wordbook.words).sortedIndex(partialPassword).toString();
           if (wordbook.words[index] === partialPassword) {
-            let partialUserInput = Lazy(userInput).substring(i, j + 1).toString();
-            let effectiveRoomSizeMultiplier = partialUserInput.toLowerCase() === wordbook.words[index] ? 1 : normalizedRoomSizeMultiplier;
-            let word = new Word(
-                partialUserInput,
+            const partialUserInput = Lazy(userInput).substring(i, j + 1).toString();
+            const effectiveRoomSizeMultiplier = partialUserInput.toLowerCase() === wordbook.words[index] ? 1 : normalizedRoomSizeMultiplier;
+            matrix[i][j] = new Word(
+              partialUserInput,
               wordbook.words[index], i, i + partialPassword.length - 1, partialPassword.length,
               wordbook.words.length * effectiveRoomSizeMultiplier, wordbook.source
             );
-            matrix[i][j] = word;
           } else if (partialPassword.length === 1) {
-            let word = new Character(partialPassword, i, i, partialPassword.length, charRoomSize);
-            matrix[i][j] = word;
+            matrix[i][j] = new Character(partialPassword, i, i, partialPassword.length, charRoomSize);
           }
         }
       }
@@ -76,14 +74,14 @@ export class PasswordcheckService {
   }
 
   findeShortestPath(matrix: PasswordPartial[][]) {
-    let indexes: PasswordPartial[] = [];
-    let nodes: PasswordPartial[] = [];
-    let path: number[] = [];
+    const indexes: PasswordPartial[] = [];
+    const nodes: PasswordPartial[] = [];
+    const path: number[] = [];
     for (let u = 0; u < matrix.length; u++) {
       for (let v = 0; v <= u; v++) {
         if (matrix[v][u] != null) {
-          let edge = matrix[v][u];
-          let lastEdgeEntropie = path[u - edge.length] != null ? path[u - edge.length] : 0;
+          const edge = matrix[v][u];
+          const lastEdgeEntropie = path[u - edge.length] != null ? path[u - edge.length] : 0;
           if (nodes.length <= u) {
             nodes.push(edge);
             if (path.length > 0) {
@@ -100,17 +98,17 @@ export class PasswordcheckService {
     }
 
     for (let i = path.length - 1; i >= 0;) {
-      let word = nodes[i];
+      const word = nodes[i];
       indexes.push(word);
       i -= word.length;
     }
     return Lazy(indexes).filter((item) => {
-      return item.type != "Zeichen";
+      return item.type !== 'Zeichen';
     }).reverse().toArray();
   }
 
   remainingChars(words: PasswordPartial[], password: string) {
-    let remainingChars = "";
+    let remainingChars = '';
     let nextStartIndex = 0;
 
     Lazy(words).each(function (word) {
@@ -124,52 +122,42 @@ export class PasswordcheckService {
 
   remainingCharRoomSize(passwordPart) {
     let roomsize = 0;
-    if (Pattern.digits.test(passwordPart)) roomsize += 10;
-    if (Pattern.lowerChars.test(passwordPart)) roomsize += 26;
-    if (Pattern.upperChars.test(passwordPart)) roomsize += 26;
-    if (Pattern.specialChars.test(passwordPart)) roomsize += 40;
+    if (Pattern.digits.test(passwordPart)) { roomsize += 10; }
+    if (Pattern.lowerChars.test(passwordPart)) { roomsize += 26; }
+    if (Pattern.upperChars.test(passwordPart)) { roomsize += 26; }
+    if (Pattern.specialChars.test(passwordPart)) { roomsize += 40; }
     return roomsize;
   }
 
   getUserText(metrics) {
-    let points = metrics.totalPoints();
-    let years = metrics.timeToBreak();
-    let pointLimit = metrics.pointLimit;
-    let timeLimit = metrics.timeLimit;
-    let usertext = "";
-    let strong: boolean = false;
-    if (years >= timeLimit && points >= pointLimit) {
-      usertext = ", weil es bei der Regelbewertung mehr als 100 Punkte erhält, und weil die geschätzte Zeit für die Suche über einem Jahr ist.";
+    const years = metrics.timeToBreak();
+    const timeLimit = metrics.timeLimit;
+    let userText = 'belowOneYear';
+    let strong = false;
+    if (years >= timeLimit) {
+      userText = 'overOneYear';
       strong = true;
-    } else {
-      if (points < pointLimit && years >= timeLimit) {
-        usertext = ", weil es bei der Regelbewertung weniger als 100 Punkte erhält.";
-      } else if (years < timeLimit && points >= pointLimit) {
-        usertext = ", weil die geschätzte Zeit für die Suche unter einem Jahr ist.";
-      } else {
-        usertext = ", weil es bei der Regelbewertung weniger als 100 Punkte erhält und weil die geschätzte Zeit für die Suche unter einem Jahr ist.";
-      }
     }
-    return {usertext: usertext, strong: strong};
+    return {userText: userText, strong: strong};
   }
 
-  sendStateToServerAfterTimeout(state: boolean){
+  sendStateToServerAfterTimeout(state: boolean) {
     window.clearTimeout(this.timer);
     this.timer = window.setTimeout(() => this.sendStateToServer(state), 3000);
   }
 
-  sendStateToServer(state: boolean){
+  sendStateToServer(state: boolean) {
     window.clearTimeout(this.timer);
-    let body: string = "result=" + (state ? "1" : "0");
-    let headers: Headers = new Headers({'Content-Type': 'application/x-www-form-urlencoded'});
-    this.http.post("resultimport.php", body, { headers: headers }).subscribe(
+    const body: string = 'result=' + (state ? '1' : '0');
+    const headers = new HttpHeaders({'Content-Type': 'application/x-www-form-urlencoded'});
+    this.http.post('resultimport.php', body, { headers: headers }).subscribe(
       () => {},
       () => {}
     );
   }
 
-  sendStateToServerIfNotSent(){
-    if(this.timer != null && this.timer.runCount < 1) {
+  sendStateToServerIfNotSent() {
+    if (this.timer != null && this.timer.runCount < 1) {
       window.clearTimeout(this.timer);
       this.timer.callback();
     }
