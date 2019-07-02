@@ -2,7 +2,7 @@
     padding-top: 10px;
 }
 
-.col-xs-5ths,
+.col-5ths,
 .col-sm-5ths,
 .col-md-5ths,
 .col-lg-5ths {
@@ -12,7 +12,7 @@
     padding-left: 10px;
 }
 
-.col-xs-5ths {
+.col-5ths {
     width: 20%;
     float: left;
 }

@@ -1,16 +1,19 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
+import {HttpClient, HttpClientModule} from '@angular/common/http';
+import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
+import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
 
-import {routing} from "./app.routes";
+import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 
-import { WordbookService } from "./passwordcheck/wordbook.service";
-import {PasswordcheckService} from "./passwordcheck/passwordcheck.service";
+import {routing} from './app.routes';
+import { WordbookService } from './passwordcheck/wordbook.service';
 
+import {PasswordcheckService} from './passwordcheck/passwordcheck.service';
 import { AppComponent } from './app.component';
 import { PointtableComponent } from './pointtable/pointtable.component';
-import { YeartableComponent } from "./yeartable/yeartable.component";
+import { YeartableComponent } from './yeartable/yeartable.component';
 import { PasswordcheckComponent } from './passwordcheck/passwordcheck.component';
 import { HeaderComponent } from './header/header.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
@@ -28,15 +31,16 @@ import { WhatDoesThisApplicationComponent } from './system-processes/what-does-t
 import { NewMethodesComponent } from './system-processes/new-methodes/new-methodes.component';
 import { SystemProcessingHeaderComponent } from './system-processes/system-processing-header/system-processing-header.component';
 import { PasswordHintsHeaderComponent } from './password-hints/password-hints-header/password-hints-header.component';
-import { NavigationComponent } from './navigation/navigation.component';
+import { ImpressumComponent } from './impressum/impressum.component';
 
+import { LangSelectorComponent } from './lang-selector/lang-selector.component';
+import { NavigationComponent } from './navigation/navigation.component';
 import { TimeAsTextDirective } from './yeartable/time-as-text.directive';
 import { TooltipDirective } from './directives/tooltip.directive';
 import { LogoBlockDirective } from './header/logo-block.directive';
 import { LogoTextDirective } from './header/logo-text.directive';
 import { TimeAsTextPipe } from './yeartable/time-as-text.pipe';
 import { BigNumberFormatPipe } from './yeartable/big-number-format.pipe';
-import { ImpressumComponent } from './impressum/impressum.component';
 
 @NgModule({
   declarations: [
@@ -67,15 +71,29 @@ import { ImpressumComponent } from './impressum/impressum.component';
     LogoTextDirective,
     TimeAsTextPipe,
     BigNumberFormatPipe,
-    ImpressumComponent
+    ImpressumComponent,
+    LangSelectorComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule,
+    HttpClientModule,
+    NgbDropdownModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: (createTranslateLoader),
+        deps: [HttpClient]
+      }
+    }),
     routing
   ],
   providers: [WordbookService, PasswordcheckService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+// required for AOT compilation
+export function createTranslateLoader(http: HttpClient) {
+  return new TranslateHttpLoader(http, './assets/i18n/');
+}

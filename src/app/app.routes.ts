@@ -1,14 +1,14 @@
-import {Routes, RouterModule} from "@angular/router";
+import {Routes, RouterModule} from '@angular/router';
 
-import {NavigationComponent} from "./navigation/navigation.component";
-import {PasswordcheckComponent} from "./passwordcheck/passwordcheck.component";
-import {PasswordHintsComponent} from "./password-hints/password-hints.component";
-import {SystemProcessesComponent} from "./system-processes/system-processes.component";
-import {StatisticsComponent} from "./statistics/statistics.component";
+import {NavigationComponent} from './navigation/navigation.component';
+import {PasswordcheckComponent} from './passwordcheck/passwordcheck.component';
+import {PasswordHintsComponent} from './password-hints/password-hints.component';
+import {SystemProcessesComponent} from './system-processes/system-processes.component';
+import {StatisticsComponent} from './statistics/statistics.component';
 
-import {SYSTEM_PROCESSES_ROUTES} from "./system-processes/system-processes.routes";
-import {PASSWORD_HINTS_ROUTES} from "./password-hints/password-hints.routes";
-import {ImpressumComponent} from "./impressum/impressum.component";
+import {SYSTEM_PROCESSES_ROUTES} from './system-processes/system-processes.routes';
+import {PASSWORD_HINTS_ROUTES} from './password-hints/password-hints.routes';
+import {ImpressumComponent} from './impressum/impressum.component';
 
 const APP_ROUTES: Routes = [
   { path: '', component: NavigationComponent, children: [
