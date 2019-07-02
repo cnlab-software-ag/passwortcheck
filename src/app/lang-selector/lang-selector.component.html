@@ -1,0 +1,14 @@
+<div class="dropdown-button" *ngIf="availableLangs.length > 1">
+  <div ngbDropdown class="action-menu" placement="bottom-right">
+    <a class="action-menu" id="actionMenu" ngbDropdownToggle>
+      {{currentLang | uppercase}}
+    </a>
+    <div class="dropdown-menu" ngbDropdownMenu aria-labelledby="actionMenu">
+      <div *ngFor="let lang of availableLangs">
+        <button class="dropdown-item" (click)="setLanguage(lang)">
+          {{lang | uppercase}}
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
