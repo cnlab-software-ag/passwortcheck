@@ -1,0 +1,235 @@
+{
+  "passwordCheck": "Passwortcheck",
+  "passwordHints": "Passworttipps",
+  "systemProcess": "Systemablauf",
+  "statistics": "Statistik",
+  "imprint": "Impressum",
+  "strong": "Stark",
+  "weak": "Schwach",
+  "password": "Passwort",
+  "or": "oder",
+  "and": "und",
+
+  "passwordSite": {
+    "passwordLabel": "Das zu prüfende Password lautet",
+    "showPassword": "Passwort anzeigen",
+    "passwordWillNotBeSent": "Das eingegebene Passwort wird lokal überprüft und nie an den Server übermittelt.",
+    "thePasswordIs": "Das Passwort ist",
+    "belowOneYear": ", weil die geschätzte Zeit für die Suche unter einem Jahr ist.",
+    "overOneYear": ",  weil die geschätzte Zeit für die Suche über einem Jahr ist.",
+    "selectedWordBooks": "Ausgewählte Wörterbücher",
+    "stepsToDo": "Weitere Tipps und Schutzmassnahmen",
+    "hintPasswordHint": "Pro Dienst ein eigenes Passwort und sofern vorhanden 2-Faktor Authentifizierung verwenden (siehe auch ",
+    "hintMalware": "Sicherstellen von ",
+    "hintHaveIBeenPawned": "Prüfen, ob das Passwort bereits in einer oder mehreren Passwortlisten auf <a href=\"https://www.checktool.ch\" target=\"_blank\">MELANI Checktool</a> oder <a href=\"https://haveibeenpwned.com/passwords\" target=\"_blank\">Have i been pwned</a> enthalten ist."
+  },
+
+  "wordBook": {
+    "names": {
+      "datum": "Datum",
+      "sequence": "Sequenz",
+      "keyboard": "Tastatur",
+      "nameList": "Namensliste",
+      "german": "Deutsch",
+      "french": "Französisch",
+      "italian": "Italienisch",
+      "rhaetoRomansch": "Rätoromanisch",
+      "english": "Englisch"
+    },
+    "source": {
+      "datum": "Datum",
+      "sequence": "Sequenz",
+      "keyboard": "Tastatur",
+      "nameList": "Namensliste",
+      "passwordList": "Passwortliste",
+      "german": "Wort (Deutsch)",
+      "french": "Wort (Französisch)",
+      "italian": "Wort (Italienisch)",
+      "rhaetoRomansch": "Wort (Rätoromanisch)",
+      "english": "Wort (Englisch)",
+      "other": "Übrige Zeichen"
+    },
+    "notSelectedWarning": "Das Wörterbuch Deutsch ist nicht ausgewählt."
+  },
+  "yearTable": {
+    "partialWords": "Teilwörter",
+    "length": "Länge",
+    "type": "Typ",
+    "roomSize": "Raumgrösse",
+    "numberOfAttempts": "Anzahl Versuche",
+    "entropy": "Entropie",
+    "computeTime": "Rechenzeit",
+    "tooltip": {
+      "roomSize": "Grösse des Zeichensatzes bzw. Anzahl der Wörter im Wörterbuch, je nach Typ.",
+      "numberOfAttempts": "Anzahl der möglichen Kombinationen für dieses Teilwort.",
+      "entropy": "Die Entropie ist ein Mass für die Zufälligkeit eines Texts. Je höher die Entropie, desto mehr Versuche sind nötig für das Erraten des Texts.",
+      "computeTime": "Rechenzeit unter der Annahme, dass der Angreifer hundert Milliarden Versuche pro Sekunde durchführen kann. Dies entspricht einem aktuellen und leistungsfähigen PC mit spezialisierter Soft- und Hardware.",
+      "wordBrackets": "In Klammern steht die normalisierte Version des Teilwortes, welche im Wörterbuch enthalten ist."
+    },
+    "costEstimated": "Aufwandschätzung"
+  },
+  "timeAsText": {
+    "lessTenASecond": "Weniger als eine Sekunde",
+    "seconds": "{{value}} Sekunden",
+    "minutes": "{{value}} Minuten",
+    "hours": "{{value}} Stunden",
+    "days": "{{value}} Tage",
+    "months": "{{value}} Monate",
+    "years": "{{value}} Jahre",
+    "severalMillionYears": "Mehrere Millionen Jahre"
+  },
+  "passwordHintsSite": {
+    "header": {
+      "passwordHints": "Passworttipps",
+      "passwordSave": "Passwörter speichern",
+      "passwordAbuse": "Passwort-Missbrauch",
+      "protections": "Schutzmassnahmen"
+    },
+    "buildingStrongPasswords": {
+      "text1": "Ein gutes Passwort besteht aus einer grossen und zufälligen Anzahl von Gross- und Kleinbuchstaben, Zahlen und Sonderzeichen. Wie kann man sich ein solches Passwort merken, ohne es aufzuschreiben? Dafür gibt es mehrere Methoden. Hier soll auf die Methode des «Passwort-Merksatzes» näher eingegangen werden.",
+      "text2": "Beim <b>«Passwort-Merksatz»</b> verwendet man einen ganzen Satz als Passwort, oder leitet aus dem Merksatz das Passwort ab.",
+      "text3": "Beispiel-Merksatz: <i>(Bitte nicht verwenden.)</i><br>«Meinen Kaffee trinke ich immer um 5 nach 9 Uhr.»",
+      "text5": "Akzeptiert eine Applikation keine langen Passwörter, so kann wie im nachfolgenden Beispiel, jeweils der erste Buchstabe jedes Wortes aus dem Merksatz für die Bildung des Passworts benutzt werden.",
+      "text6": "Beispiel-Merksatz:<br>«<u>M</u>einen <u>K</u>affee <u>t</u>rinke <u>i</u>ch <u>i</u>mmer <u>u</u>m <u>5</u> <u>n</u>ach <u>9</u> <u>U</u>hr<u>.</u>»",
+      "text7": "Beispiel-Passwort: <i>(Bitte nicht verwenden.)</i><br>MKtiiu5n9U.",
+      "text8": "Das System kann individuell ausgebaut und verändert werden. Der Kreativität sind fast keine Grenzen gesetzt. Beispielsweise kann die Gross- und Kleinschreibung vertauscht werden. Wichtig ist, dass das System einfach und reproduzierbar bleibt.",
+      "text9": "Unterstützt die Anwendung eine Zwei-Faktor-Authentifizierung, so sollte diese als zusätzlicher Schutz aktiviert werden.",
+      "subtitle": "Passwort-Fallstricke, die vermieden werden sollten",
+      "text10": "Einfach zu erratende Begriffe oder Zahlen sollten vermieden werden. Dazu gehören zum Beispiel einfache Wörter, Namen, Geburtsdatum oder Jahreszahlen. Auch sollte das Ersetzen von Buchstaben durch Zahlen oder Sonderzeichen – zum Beispiel A durch eine 4 ersetzen – im Fachjargon «leeten» oder «<a href=\"https://de.wikipedia.org/wiki/Leetspeak\" target=\"_blank\">Leetspeak</a>» genannt, nicht verwendet werden.",
+      "text11": "Für jeden Dienst sollte ein individuelles Passwort verwendet werden."
+    },
+    "secureStoringPasswords": {
+      "text1-1": "Ein Passwort sollte nie aufgeschrieben werden. Was sich leicht anhört, ist in der Praxis nicht immer einfach umzusetzen, insbesondere da für die unterschiedlichen Dienste und Websites jeweils andere Passwörter verwendet werden sollten (siehe: ",
+      "text1-2": "). Es gelingt nur sehr wenigen Personen, alle Passwörter im Kopf zu behalten. Abhilfe kann hier ein Passwortmanager schaffen.",
+      "text2": "Ein Passwortmanager-Programm erleichtert die Erstellung, Verwaltung und Nutzung sicherer Passwörter. Beim Passwortmanager muss man sich nur noch das Hauptpasswort für den Passwortmanager und die Passwörter für wirklich sensible Dienste wie E-Banking merken. Weitere Informationen zum Thema Passwortmanager finden Sie im <a href=\"https://dsb.zh.ch/internet/datenschutzbeauftragter/de/publikationen/anleitungen/_jcr_content/contentPar/form_0/formitems/passwortmanager/download.spooler.download.1485878383609.pdf/Merkblatt_Vergleich_Passwortmanager.pdf\" target=\"_blank\">Merkblatt Passwortmanager</a>.",
+      "text3": "Grundsätze für ein sicheres Speichern von Passwörtern:",
+      "text4": "Ein Passwortmanager-Programm erleichtert die Erstellung und Nutzung sicherer Passwörter.",
+      "text5": "Die wichtigsten Passwörter für den Passwortmanager und sensible Dienste wie E-Banking immer merken und nie aufschreiben.",
+      "text6": "Passwörter nicht ungeschützt notieren, also zum Beispiel nie auf dem Post-it unter der Tastatur."
+    },
+    "passwordAbuse": {
+      "text1": "Unberechtigte Personen können auf verschiedene Weise an ein Passwort gelangen. Eine Methode ist das Erraten des Passworts:",
+      "text2": "Viele Benutzerinnen und Benutzer verwenden Wörter, die sie sich leicht merken können, zum Beispiel aus ihrem persönlichen Umfeld. Somit ist das Erraten eines Passwortes die einfachste und meist auch schnellste Methode, um Zugang auf ein Computersystem zu erhalten (Erraten von Passwörtern / Password Guessing).",
+      "text3": "Einfache oder kurze Passwörter können durch systematisches Durchprobieren geknackt werden (Brute Force Attack). Die Erfolgschance dieser Methode kann durch starke Passwörter eingeschränkt werden.",
+      "text3-1": "Tipps für das Erstellen und Speichern von Passwörtern gibt es unter ",
+      "text3-2": ".",
+      "text4": "Passwörter können auch mitgeschnitten werden. Die gängigsten Methoden sind:",
+
+      "text5": "Eine Person wird mittels Phishing (Link in einem E-Mail) auf eine gefälschte Website gelockt, die der echten Website sehr ähnlich sieht. Die Person wird dann aufgefordert, ihren Benutzernamen und das dazugehörige Passwort einzugeben. Werden die Angaben eingegeben, erhält die Angreiferin oder der Angreifer die Passwortdaten.",
+      "text6": "Keylogger (spezielle Schadsoftware) werden dazu verwendet, um die Eingaben von Benutzenden eines Computers zu protokollieren und dadurch zu überwachen oder zu rekonstruieren. Keylogger werden von Unberechtigten auch verwendet, um an Passwörter zu gelangen.",
+      "text7": "Erfolgt die Übertragung von Passwörtern unverschlüsselt, ist es für Unberechtigte einfach an Passwörter zu gelangen. Dies geschieht beispielsweise bei einem unverschlüsselten Webzugriff, erkennbar durch die Abkürzung «http» im Browseradressfeld. Mit verschlüsselten Verbindungen, beispielsweise mit dem Webzugriff über TLS/SSL, wird dieses Risiko stark verringert. Eine verschlüsselte Verbindung wird durch die Abkürzung «<b>https</b>» im Browseradressfeld angezeigt.",
+      "text8": "Einfache Massnahmen zum Schutz von Passwörtern gibt es unter "
+    },
+    "protections": {
+      "text1": "Es ist essenziell, die Geräte zu schützen, auf denen die Passwörter verwendet werden.",
+      "text2": "Die folgenden fünf Massnahmen helfen, die Geräte, die Daten und damit auch das Passwort besser zu schützen:",
+      "text3": "Persönliche Informationen schützen",
+      "text4": "Angriffe abwehren (Firewall, installieren von Aktualisierungen, Malwareschutz)",
+      "text5": "Zugriffe Unberechtigter verhindern",
+      "text6": "Sensitive Inhalte verschlüsseln",
+      "text7": "Informationen sichern / löschen",
+      "text8": "",
+      "text9": "Weiterführende Informationen zu den Themen Smartphone und PC-Schutz und Verhalten im Internet finden Sie auf folgenden Websites:",
+      "text10": "Datenschutzbeauftragter des Kantons Zürich:",
+      "text10.1": "<a href=\"https://dsb.zh.ch/internet/datenschutzbeauftragter/de/mein-datenschutz/digitaler-selbstschutz.html\" target=\"_blank\">Digitaler Selbstschutz</a>",
+      "text10.2": "<a href=\"https://dsb.zh.ch/internet/datenschutzbeauftragter/de/publikationen/anleitungen/_jcr_content/contentPar/form/formitems/pc_sicherheit/download.spooler.download.1520842016466.pdf/Checkliste_PC-Sicherheit.pdf\" target=\"_blank\">PC-Sicherheit</a>",
+      "text10.3": "<a href=\"https://dsb.zh.ch/internet/datenschutzbeauftragter/de/publikationen/anleitungen/_jcr_content/contentPar/form/formitems/smartphone_sicherhei/download.spooler.download.1509975972026.pdf/Checkliste_Smartphone-Sicherheit.pdf\" target=\"_blank\">Smartphone-Sicherheit</a>",
+      "text11": "BSI für Bürger: <a href=\"https://www.bsi-fuer-buerger.de\" target=\"_blank\">https://www.bsi-fuer-buerger.de</a>",
+      "text12": "Swiss Internet Security Alliance: <a href=\"https://www.swiss-isa.ch\" target=\"_blank\">https://www.swiss-isa.ch</a>",
+      "text13": "eBanking aber sicher!: <a href=\"https://ebankingabersicher.ch\" target=\"_blank\">https://ebankingabersicher.ch</a>"
+    }
+  },
+  "systemProcesses": {
+    "header": {
+      "systemSetup": "Systemaufbau",
+      "checkSequence": "Prüfungsablauf",
+      "crackingPasswords": "Passwörter knacken",
+      "whatDoesThisApp": "Was macht der Passwortcheck?",
+      "newMethods": "Neue Methoden"
+    },
+    "systemSetup": {
+      "text1": "Der Passwortcheck besteht aus den Komponenten Webserver, Passwortcheck-Applikation und einer Datenbank.",
+      "subtitle1": "Webserver",
+      "text1-1": "Der Webserver stellt die Schnittstelle zur Benutzerin oder zum Benutzer dar. Er stellt den Passwortcheck bereit, verwaltet die Statistiken in einer Datenbank und stellt sie als Webseiten dar.",
+      "subtitle2": "Passwortcheck-Applikation",
+      "text2-1-1": "Der Passwortcheck ist das Herzstück der Anwendung und dient dazu, die Stärke eines eingegebenen Passworts abzuschätzen. Der Passwortcheck ist in <a href=\"https://de.wikipedia.org/wiki/JavaScript\" target=\"_blank\">JavaScript</a> implementiert. JavaScript-Programme werden vom Browser geladen und auf dem Rechner der Benutzerin oder des Benutzers ausgeführt. Daher werden keine Passwörter oder andere private Nutzerdaten an den Server gesendet. Alle Berechnungen finden auf dem Rechner der Benutzerin oder des Benutzers statt. Mit dem Schliessen des Browsers werden die Daten gelöscht. Um eine Statistik über die Häufigkeit von starken und schwachen Passwörtern zu erstellen, schickt das JavaScript das Ergebnis an den Server. Hier wird nur übertragen, ob das Ergebnis ",
+      "text2-1-2": " herauskam.",
+      "text2-2-1": "Die Prüfung des eingegebenen Passworts ist im ",
+      "text2-2-2": " beschrieben.",
+      "subtitle3": "Datenbank",
+      "text3-1-1": "In der Datenbank werden Informationen über die Qualität (",
+      "text3-1-2": ") des geprüften Passworts für statistische Zwecke gesammelt.",
+      "text3-2": "<b>Dabei werden nur die Resultate der Überprüfung gespeichert. Passwörter werden nie an den Server übermittelt.</b>"
+    },
+    "checkSequence": {
+      "text0-1": "Der Passwortcheck beurteilt die Stärke von Passwörtern aufgrund der Wahrscheinlichkeit der Anzahl benötigten Versuche einer Angreiferin oder eines Angreifers, um das Passwort herauszufinden.",
+      "text0-2": "In erster Linie hängt dies von der Länge des Passworts und dem verwendeten Zeichenumfang ab. Enthält ein Passwort bekannte Wörter, Zahlenreihen oder Tastaturmuster, kann sich dies eine Angreiferin oder ein Angreifer zunutze machen. Statt lange Zeichenketten zufällig durchzuprobieren, wird sie oder er zuerst versuchen, Wörter aus Wörterbüchern, Jahreszahlen, Tastaturmuster und ähnliches zu probieren und zu kombinieren. Dies reduziert die Anzahl der benötigten Versuche stark.",
+      "text0-3": "Deshalb sucht der Passwortcheck nach den folgenden Bestandteilen:",
+      "text0-4": "Wörter aus dem deutschen, französischen, italienischen, rätoromanischen und englisches Wörterbuch (je nach Auswahl der Benutzerin oder des Benutzers)",
+      "text0-5": "Tastaturmuster auf der Schweizer Tastatur (zum Beispiel «qwertz»)",
+      "text0-6": "Zahlenreihen und alphabetische Folgen (zum Beispiel «1234», «abcd»)",
+      "text0-7": "Datumsangaben (zum Beispiel «03.06.2019»)",
+      "text0-8": "Bei der Suche im Wörterbuch werden auch veränderte Gross- und Kleinschreibung und <a href=\"https://de.wikipedia.org/wiki/Leetspeak\" target=\"_blank\">L33t</a>-Schreibung erkannt. So werden zum Beispiel kaTZe, H@us und B3tt als Wörter gefunden.",
+      "text0-9": "",
+      "subtitle1": "",
+      "text1-1": "Der Passwortcheck berechnet die theoretische Anzahl der Kombinationen, die durchprobiert werden müsste, bis das Passwort gefunden ist. Zuerst werden die oben genannten Wörterbuchwörter und Muster im Passwort gesucht und das Passwort dann in seine Bestandteile zerlegt.",
+      "text1-2": "Für jedes Teilwort wird nun berechnet, wie viele Möglichkeiten eine Angreiferin oder ein Angreifer durchprobieren müsste:",
+      "text1-3": "Für Wörter aus den geladenen Wörterbüchern ist die Anzahl der Möglichkeiten gleich der Grösse des Wörterbuchs. Aufgrund der Erkennung von Gross- und Kleinschreibung sowie L33t wird die Grösse des eigentlichen Wörterbuchs mit dem Faktor 10 multipliziert.",
+      "text1-4": "Für Tastaturmuster, Zahlenreihen und alphabetische Folgen ist es die Anzahl der jeweils möglichen Kombinationen.",
+      "text1-5": "Für die übrigen Zeichen, die nicht Teil eines Wortes oder Musters sind, ergibt sich als Anzahl der Möglichkeiten <i>k</i><sup><i>n</i></sup>, wobei <i>k</i> die Anzahl der möglichen Zeichen und <i>n</i> die Länge ist.",
+      "text1-6": "Um den Aufwand in Zeit zu schätzen, wird angenommen, dass eine Angreiferin oder ein Angreifer hundert Milliarden Versuche pro Sekunde durchführen kann. Dies entspricht der Rechenleistung eines leistungsfähigem PCs mit spezialisierter Soft- und Hardware.",
+      "text1-7-1": "Ein Passwort muss einem Angriff während einer Rechenzeit von ",
+      "text1-7-2": "mehr als einem Jahr",
+      "text1-7-3": " standhalten, um als ",
+      "text1-7-4": " beurteilt zu werden.",
+      "img": "./assets/system_ablauf.png",
+      "img-alt": "Abbildung 1: Beispiel einer Aufwandschätzung"
+    },
+    "crackingPasswords": {
+      "text1": "Die einfachste Methode, ein Passwort zu knacken, besteht darin, alle Möglichkeiten nacheinander auszuprobieren. Diese Methode ist sehr aufwendig, da die Anzahl der Möglichkeiten mit der Länge des Passworts exponentiell steigt.",
+      "text2": "Da die meisten Leute ihre Passwörter nicht zufällig wählen, nehmen sich ambitionierte Tools zum Knacken von Passwörtern spezielle Passwort-Wörterbücher zur Hilfe. Passwort-Wörterbücher enthalten zusätzlich zu den normalen Wörtern eines Wörterbuchs andere gängige Zeichenfolgen wie Tastaturmuster oder Zahlenreihen wie 12345. Zudem kann einbezogen werden, dass oft Buchstaben durch andere Zeichen ersetzt werden, zum Beispiel E durch 3 oder A durch @, auch bekannt als <a href=\"https://de.wikipedia.org/wiki/Leetspeak\" target=\"_blank\">Leet / L33t</a>-Schreibung. Die Verwendung von Passwort-Wörterbüchern und Berücksichtigung der L33t-Schreibung verringert die Anzahl der benötigten Knackversuche stark.",
+      "text3": "Online- und Offline-Angriffe laufen unterschiedlich ab. Kommt beispielsweise der Laptop abhanden, so kann eine unbefugte Person eine Kopie der Festplatte anfertigen und darauf mit dem eigenen Rechner Milliarden verschiedene potenzielle Passwörter ausprobieren. Der Passwortcheck geht für seine Aufwandschätzung davon aus, dass die Angreiferin oder der Angreifer hundert Milliarden Versuche pro Sekunde ausführen kann.",
+      "text5": "Auch Online-Dienste können von einem Offline-Angriff betroffen sein. Kann Person die Passwortdatenbanken kopieren, kann sie auf dem eigenen Rechner sehr viele Versuche pro Sekunde durchführen.",
+      "text6": "Die Entwendung von Passwortdatenbanken ist aus einem weiteren Grund heikel: Diese Datenbanken enthalten oft weitere Nutzerdaten, wie Name und E-Mail-Adresse. Da viele Benutzerinnen oder Benutzer das gleiche Passwort für mehrere Dienste verwenden, versuchen Angreifer, sich mit den entwendeten E-Mail- und Passwortdaten bei anderen Diensten einzuloggen."
+    },
+    "whatDoesThisApp": {
+      "subtitle1": "Was er macht",
+      "text1-1": "Der Passwortcheck prüft das Passwort auf das Vorhandensein gängiger Zeichenfolgen, die eine Angreiferin oder ein Angreifer erwartet und somit das Knacken enorm vereinfachen. Dabei handelt es sich um Wörterbuch-Wörter, Tastaturmuster, Zahlenreihen usw.",
+      "text1-2": "Ausgehend von den gefundenen Zeichenfolgen wird eine Schätzung des Suchaufwands vorgenommen.",
+      "text1-5": "Details zum Bewertungsverfahren gibt es unter ",
+	  "text1-6": ".",
+      "subtitle2": "Was er nicht macht",
+      "text2-1": "Die Risiken gezielter Suchen können von einem generischen Passwortcheck nicht abgedeckt werden. Der Passwortcheck arbeitet anhand von allgemeinen Wörterbüchern. Diese schliessen häufige Namen der verschiedenen Sprachen ein. Eine Angreiferin oder ein Angreifer, der es auf ein bestimmtes Opfer abgesehen hat, kann Wissen über die Person einbeziehen: Geburtsdaten, Nachnamen, Adressdaten, Familiendaten, Namen der Kinder oder Haustiere usw.",
+      "text2-2": "Der Passwortcheck kann auch nicht das Risiko einbeziehen, dass ein Passwort auf anderen Wegen bekannt wird, zum Beispiel durch die unsichere Speicherung des Passworts auf dem PC oder beispielsweise durch ausspionieren mit Malware.",
+      "text2-3": "",
+      "text2-4": ""
+    },
+    "newMethods":{
+      "text1": "Im Passwortcheck des Datenschutzbeauftragten des Kantons Zürich sind folgende Besonderheiten implementiert:",
+      "text2": "Alle Checks erfolgen lokal im Browser der Benutzerin oder des Benutzers. Es werden keine Passwörter an einen Server verschickt.",
+      "text3": "Die Prüfung erfolgt in Echtzeit. Schon bei der Eingabe des Passworts kann der Benutzer oder die Benutzerin sehen, wie sich die Bewertung mit jedem zusätzlichen Zeichen verändert.",
+      "text4": "Es stehen Wörterbücher für Schweizer Standarddeutsch, Italienisch, Französisch, Rätoromanisch und Englisch bereit, die von der Benutzerin oder von dem Benutzer gewählt werden können.",
+      "text5": "Bei der Wörtersuche werden auch gängige Modifikationen (<a href=\"https://de.wikipedia.org/wiki/Leetspeak\" target=\"_blank\">Leeten / L33t</a>) erkannt.",
+      "text6": "Tastaturmuster werden auf Basis der Schweizer Tastatur erkannt.",
+      "text7": "Der Quellcode sowie die Verfahrensweise sind öffentlich zugänglich (<a href=\"https://www.github.com/cnlab-software-ag/passwortcheck.git\" target=\"_blank\">Github Repository</a>)."
+    }
+  },
+  "imprintSite": {
+    "contact": "Kontakt",
+    "phone": "Telefon",
+    "email": "E-Mail",
+    "website": "Website",
+    "socialMedia": "Social Media",
+    "twitterChannel": "Twitter-Kanal des DSB",
+    "youtubeChannel": "Youtube-Kanal des DSB",
+    "dsbApp": "Datenschutz App",
+    "androidVersion": "Android-Version",
+    "iosVersion": "iOS-Version",
+    "developer": "Entwickler",
+    "sourceCode": "Source Code",
+    "sourceCodeText": "Der Passwortcheck wird unter der Bedingungen der <a href=\"https://opensource.org/licenses/bsd-license.php\" target=\"_blank\">BSD-2-Clause</a> auf <a href=\"https://www.github.com/cnlab-software-ag/passwortcheck.git\" target=\"_blank\">GIT-Hub</a> zur Verfügung gestellt.",
+    "privacyStatement": "Datenschutzerklärung",
+    "privacyStatementText": "Beim Zugriff auf den Passwortcheck des Datenschutzbeauftragten des Kantons Zürich wird die IP-Adresse vorübergehend verwendet, um die Statistik zu aktualisieren. Danach wird die IP-Adresse gelöscht.",
+    "version": ""
+  }
+}
