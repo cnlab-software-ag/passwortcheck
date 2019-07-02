@@ -1,1 +1,8 @@
-/* You can add global styles to this file, and also import other style files */
+label {font-weight:bold}
+
+.strong {
+  color: #66cc66;
+}
+.weak {
+  color: #ff6666;
+}
