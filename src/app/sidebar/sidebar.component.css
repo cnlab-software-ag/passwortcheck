@@ -37,14 +37,12 @@ img {
         height: 10%;
         text-align: center;
         color: white;
-        padding: 0px;
+        padding: 0;
         width: 20%;
         float: left;
     }
     .sidebar-icon {
-        width: 90%;
-        margin-left: 28%;
-        margin-right: 28%;
+        width: 40%;
     }
     .sidebar-text {
         color: white;
@@ -53,20 +51,21 @@ img {
 
     .sidebar-button-left {
         margin-left: 15px;
-        margin-right: 0px;
+        margin-right: 0;
     }
     .sidebar-button-middle {
         margin-left: 15px;
-        margin-right: 0px;
+        margin-right: 0;
     }
     .sidebar-button-right {
         margin-left: 15px;
-        margin-right: 0px;
+        margin-right: 0;
     }
 }
 
 @media (min-width: 768px) {
     .sidebar-button {
+        margin-bottom: 3px;
         cursor: pointer;
         height: 10%;
         text-align: center;
@@ -75,9 +74,7 @@ img {
         float: none;
 	}
     .sidebar-icon {
-        width: 100%;
-        margin-left: 25%;
-        margin-right: 25%;
+        width: 40%;
     }
 }
 
@@ -89,9 +86,7 @@ img {
         text-align: center;
     }
     .sidebar-icon {
-        width: 80%;
-        margin-left: 31%;
-        margin-right: 31%;
+        width: 38%;
     }
     .sidebar-text {
         color: white;
@@ -107,9 +102,7 @@ img {
         text-align: center;
     }
     .sidebar-icon {
-        width: 70%;
-        margin-left: 33%;
-        margin-right: 33%;
+        width: 34%;
     }
 
     .sidebar-text {
