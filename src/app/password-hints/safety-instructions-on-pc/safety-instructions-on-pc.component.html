@@ -1,22 +1,28 @@
 <div class="row">
-  <div class="col-xs-12">
-    <p>Neben der Wahl von sicheren Passwörtern, ihrer sorgfältigen Aufbewahrung und einem vorsichtigen Verhalten bei E-Mails und im Internet ist es essenziell, die Geräte zu schützen, auf denen die Passwörter verwendet werden.</p>
-    <p>Die folgenden fünf einfachen Massnahmen helfen die Geräte, die Daten und damit auch das Passwort besser zu schützen:</p>
+  <div class="col-12">
+    <p [innerHTML]="'passwordHintsSite.protections.text1' | translate"></p>
+    <p [innerHTML]="'passwordHintsSite.protections.text2' | translate"></p>
     <ol>
-      <li>Persönliche Informationen schützen</li>
-      <li>Angriffe abwehren</li>
-      <li>Zugriffe Unberechtigter verhindern</li>
-      <li>Sensitive Inhalte verschlüsseln</li>
-      <li>Informationen sichern / löschen</li>
+      <li [innerHTML]="'passwordHintsSite.protections.text3' | translate"></li>
+      <li [innerHTML]="'passwordHintsSite.protections.text4' | translate"></li>
+      <li [innerHTML]="'passwordHintsSite.protections.text5' | translate"></li>
+      <li [innerHTML]="'passwordHintsSite.protections.text6' | translate"></li>
+      <li [innerHTML]="'passwordHintsSite.protections.text7' | translate"></li>
     </ol>
-    <p>Ausführliche Tipps zu den fünf Massnahmen können der <a href="https://dsb.zh.ch/internet/datenschutzbeauftragter/de/publikationen/anleitungen/_jcr_content/contentPar/form/formitems/pc_sicherheit/download.spooler.download.1520842016466.pdf/Checkliste_PC-Sicherheit.pdf" target="_blank">Checkliste PC-Sicherheit</a> entnommen werden.
-	
-	<p>Weiterführende Informationen zu den Themen PC-Schutz und Verhalten im Internet finden Sie auf folgenden Websites:</p>
+
+    <p [innerHTML]="'passwordHintsSite.protections.text9' | translate"></p>
     <ul>
-      <li>Datenschutzbeauftragter des Kantons Zürich: <a href="https://dsb.zh.ch/internet/datenschutzbeauftragter/de/mein-datenschutz/digitaler-selbstschutz.html" target="_blank">Merkblatt Sichere E-Mails</a></li>
-      <li>BSI für Bürger: <a href="https://www.bsi-fuer-buerger.de" target="_blank">https://www.bsi-fuer-buerger.de</a></li>
-      <li>Swiss Internet Security Alliance: <a href="https://www.swiss-isa.ch" target="_blank">https://www.swiss-isa.ch</a></li>
-      <li>eBanking - aber sicher!: <a href="https://ebankingabersicher.ch" target="_blank">https://ebankingabersicher.ch</a></li>
+      <li>
+        {{'passwordHintsSite.protections.text10' | translate}}
+        <ul>
+          <li [innerHTML]="'passwordHintsSite.protections.text10.1' | translate"></li>
+          <li [innerHTML]="'passwordHintsSite.protections.text10.2' | translate"></li>
+          <li [innerHTML]="'passwordHintsSite.protections.text10.3' | translate"></li>
+        </ul>
+      </li>
+      <li [innerHTML]="'passwordHintsSite.protections.text11' | translate"></li>
+      <li [innerHTML]="'passwordHintsSite.protections.text12' | translate"></li>
+      <li [innerHTML]="'passwordHintsSite.protections.text13' | translate"></li>
     </ul>
   </div>
 </div>
