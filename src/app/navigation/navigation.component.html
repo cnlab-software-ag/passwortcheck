@@ -1,17 +1,17 @@
 <div class="row">
-  <div class="col-xs-12">
+  <div class="col-12">
     <app-header></app-header>
   </div>
 </div>
 
 <div class="row">
-  <div class="col-xs-12 col-sm-2 col-md-2 col-sm-push-10 col-md-push-10 sidebarContainer">
+  <div class="col-12 col-md-2 col-lg-2 order-md-10 order-lg-10 sidebarContainer">
     <app-sidebar></app-sidebar>
   </div>
-  <div class="col-xs-12 col-sm-10 col-md-10 col-sm-pull-2 col-md-pull-2">
+  <div class="col-12 col-md-10 col-lg-10 order-md-2 order-lg-2">
     <div class="row">
-      <div class="col-xs-1 hidden-xs"></div>
-      <div class="col-xs-12 col-sm-9 passwordCheckContainer">
+      <div class="col-1 d-none d-sm-block"></div>
+      <div class="col-12 col-md-9 passwordCheckContainer">
         <router-outlet></router-outlet>
       </div>
     </div>
