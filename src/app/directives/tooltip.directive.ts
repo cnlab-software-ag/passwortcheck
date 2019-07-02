@@ -1,4 +1,4 @@
-import {Directive, HostBinding, HostListener, ElementRef, Renderer} from '@angular/core';
+import {Directive, HostBinding, HostListener, ElementRef, Renderer2} from '@angular/core';
 
 @Directive({
   selector: '[appTooltip]',
@@ -10,19 +10,20 @@ export class TooltipDirective {
 
   span = null;
 
-  constructor(private element: ElementRef, private renderer: Renderer) {}
+  constructor(private element: ElementRef, private renderer: Renderer2) {}
 
   @HostListener('click') onClick() {
-    let el = this.element.nativeElement;
+    const el = this.element.nativeElement;
 
     if (el.children.length > 0) {
-      this.renderer.setElementAttribute(el, "title", this.span.innerHTML);
+      this.renderer.setAttribute(el, 'title', this.span.innerHTML);
       el.removeChild(this.span);
     } else {
-      this.span = this.renderer.createElement(el, "span");
-      this.renderer.setElementClass(this.span, "tooltiptitle", true);
-      this.renderer.createText(this.span, el.title);
-      el.removeAttribute("title");
+      this.span = this.renderer.createElement('span');
+      this.renderer.addClass(this.span, 'tooltiptitle');
+      this.renderer.appendChild(this.span, this.renderer.createText(el.title));
+      this.renderer.appendChild(el, this.span);
+      el.removeAttribute('title');
     }
   }
 }
