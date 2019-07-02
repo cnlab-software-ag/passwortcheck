@@ -1,23 +1,22 @@
 <div class="row">
-  <div class="col-xs-12">
+  <div class="col-12">
     <table class="table table-sm">
     <thead>
     <tr>
-      <th>Teilwörter</th>
-      <th class="hidden-xs">Länge</th>
-      <th>Typ</th>
-      <th class="hidden-xs"><span appTooltip title="Grösse des Zeichensatzes bzw. Anzahl der Wörter im Wörterbuch, je nach Typ.">Raumgrösse</span></th>
-      <th class="hidden-xs"><span appTooltip title="Anzahl der möglichen Kombinationen für dieses Teilwort.">Anzahl Versuche</span></th>
-      <th><span appTooltip title="Die Entropie ist ein Mass für die Zufälligkeit eines Texts. Je höher die Entropie, desto mehr Versuche sind nötig für das Erraten des Texts.">Entropie</span></th>
-      <th><span appTooltip title="Rechenzeit unter der Annahme, dass der Angreifer fünf Milliarden Versuche pro Sekunde durchführen kann. Dies entspricht einem aktuellen Heim-PC mit spezialisierter Software.">Rechenzeit</span></th>
+      <th>{{'yearTable.partialWords' | translate}}</th>
+      <th class="d-none d-md-table-cell">{{'yearTable.length' | translate}}</th>
+      <th>{{'yearTable.type' | translate}}</th>
+      <th class="d-none d-md-table-cell"><span appTooltip title="{{'yearTable.tooltip.roomSize' | translate}}">{{'yearTable.roomSize' | translate}}</span></th>
+      <th class="d-none d-md-table-cell"><span appTooltip title="{{'yearTable.tooltip.numberOfAttempts' | translate}}">{{'yearTable.numberOfAttempts' | translate}}</span></th>
+      <th><span appTooltip title="{{'yearTable.tooltip.entropy' | translate}}">{{'yearTable.entropy' | translate}}</span></th>
+      <th><span #computeTime appTooltip title="{{'yearTable.tooltip.computeTime' | translate}}">{{'yearTable.computeTime' | translate}}</span></th>
     </tr>
     </thead>
     <tbody>
 
     <tr *ngFor="let item of metrics.allWords()">
-      <td *ngIf="showpassword">
-        <span *ngIf="item.showToolTip()" appTooltip
-              title="In Klammern steht die normalisierte Version des Teilwortes, welche im Wörterbuch enthalten ist.">
+      <td *ngIf="showpassword" class="word-break">
+        <span *ngIf="item.showToolTip()" appTooltip title="{{'yearTable.tooltip.wordBrackets' | translate}}">
           {{ item.displayedWord() }}
         </span>
         <span *ngIf="!item.showToolTip()">
@@ -25,20 +24,20 @@
         </span>
       </td>
       <td *ngIf="!showpassword">***</td>
-      <td class="hidden-xs">{{ item.length }}</td>
-      <td>{{ item.source }}</td>
-      <td class="hidden-xs">{{ item.roomSize | bigNumberFormat }}</td>
-      <td class="hidden-xs">{{ item.numberOfAttemps() | bigNumberFormat }}</td>
+      <td class="d-none d-md-table-cell">{{ item.length }}</td>
+      <td>{{ 'wordBook.source.' + item.source | translate }}</td>
+      <td class="d-none d-md-table-cell">{{ item.roomSize | bigNumberFormat }}</td>
+      <td class="d-none d-md-table-cell">{{ item.numberOfAttemps() | bigNumberFormat }}</td>
       <td>{{ item.entropie() | bigNumberFormat }} Bit</td>
       <td></td>
     </tr>
 
     <tr>
-      <td colspan="4" class="hidden-xs"><b>Aufwandschätzung</b></td>
-      <td colspan="2" class="visible-xs"><b>Aufwandschätzung</b></td>
-      <td class="hidden-xs">{{ metrics.numberOfAttemps() | bigNumberFormat }}</td>
+      <td colspan="4" class="d-none d-md-table-cell"><b>{{'yearTable.costEstimated' | translate}}</b></td>
+      <td colspan="2" class="d-md-none"><b>Aufwandschätzung</b></td>
+      <td class="d-none d-md-table-cell">{{ metrics.numberOfAttemps() | bigNumberFormat }}</td>
       <td>{{ metrics.entropie() | bigNumberFormat }} Bit</td>
-      <td [style.color]="metrics.timeToBreakColor()" [style.font-weight]="'bold'">{{ metrics.timeToBreak() | timeAsText }}</td>
+      <td [style.color]="metrics.timeToBreakColor()" [style.font-weight]="'bold'">{{ metrics.timeToBreak() | timeAsText: computeTime.innerText | async }}</td>
     </tr>
 
     </tbody>

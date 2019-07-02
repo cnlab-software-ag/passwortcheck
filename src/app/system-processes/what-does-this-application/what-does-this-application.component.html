@@ -1,17 +1,16 @@
 <div class="row">
-  <div class="col-xs-12">
-    <h4>Was er macht</h4>
-    <p>Der Passwortcheck prüft das Passwort auf das Vorhandensein gängiger Zeichenfolgen, die eine Angreiferin oder ein Angreifer erwartet und somit das Knacken enorm vereinfachen. Dabei handelt es sich um Wörterbuch-Wörter, Tastaturmuster, Zahlenreihen usw.</p>
-    <p>Ausgehend von den gefundenen Zeichenfolgen werden zusammen mit der Passwortlänge und der Anzahl verschiedener Zeichen zwei Bewertungen vorgenommen.</p>
-    <ul>
-      <li>Prüfung gegen plausible Regeln</li>
-      <li>Schätzung des Suchaufwands anhand der gefundenen Zeichenfolgen</li>
-    </ul>
-    <p>Details zu diesen Bewertungsverfahren gibt es im Kapitel <a [routerLink]="'../pruefablauf'">Prüfungsablauf</a>.</p>
-    <h4>Was er nicht macht</h4>
-    <p>Die Risiken gezielter Suchen können von einem generischen Passwortcheck nicht abgedeckt werden. Der Passwortcheck arbeitet anhand von allgemeinen Wörterbüchern. Diese schliessen häufige Namen der verschiedenen Sprachen ein. Eine Angreiferin oder ein Angreifer, der es gezielt auf ein bestimmtes Opfer abgesehen hat, kann Wissen über die Person einbeziehen: Geburtsdaten, seltene Nachnamen, Adressdaten, Familiendaten wie Namen der Kinder oder Haustiere usw.</p>
-    <p>Der Passwortcheck kann auch nicht das Risiko einbeziehen, dass ein Passwort auf anderen Wegen bekannt wird, zum Beispiel durch die unsichere Speicherung des Passworts auf dem PC.</p>
-    <p>Eine andere Angriffsmöglichkeit nennt sich Social Engineering. Beim Social Engineering versucht eine Angreiferin oder ein Angreifer, Daten eines Opfers herauszufinden, indem sie oder er Nachrichten schreibt oder Telefonate führt und sich als eine andere Person ausgibt. Zum Beispiel könnte ein Angreifer bei der Bank einer Frau anrufen und behaupten, ihr Ehemann zu sein, um an Informationen über sie zu gelangen. Deshalb ist es wichtig, dass man bei der Übermittlung von Geheimnissen an andere, insbesondere am Telefon, sicher ist, dass es sich tatsächlich um die richtige Person handelt und dass der Kanal vor dem Abhören durch Dritte geschützt ist.</p>
-    <p>Der Passwortcheck schätzt den Aufwand einer Angreiferin oder eines Angreifers für das Knacken eines Passworts. Der Passwortcheck führt selbst keine Knackversuche durch. Um wirklich zu prüfen, dass das Knacken eines Passworts mit einer bestimmten Strategie über ein Jahr dauert, müsste der Test mindestens ein Jahr laufen. Ausserdem würde bei so einem Test nur eine bestimmte Strategie getestet. Um möglichst flexibel den Mindestaufwand für Angreifer mit unterschiedlichen Strategien zu schätzen, durchsucht er das Passwort nach Wörtern und Mustern, die ein Passwortknacker im Wörterbuch haben könnte, und geht dann von der schwächsten Kombination dieser Passwortteile aus.</p>
+  <div class="col-12">
+    <h4 [innerHTML]="'systemProcesses.whatDoesThisApp.subtitle1' | translate"></h4>
+    <p [innerHTML]="'systemProcesses.whatDoesThisApp.text1-1' | translate"></p>
+    <p [innerHTML]="'systemProcesses.whatDoesThisApp.text1-2' | translate"></p>
+
+    <p>
+      <span [innerHTML]="'systemProcesses.whatDoesThisApp.text1-5' | translate"></span>
+      <a [routerLink]="'../pruefablauf'">{{'systemProcesses.header.checkSequence' | translate}}</a>.
+    </p>
+
+    <h4 [innerHTML]="'systemProcesses.whatDoesThisApp.subtitle2' | translate"></h4>
+    <p [innerHTML]="'systemProcesses.whatDoesThisApp.text2-1' | translate"></p>
+    <p [innerHTML]="'systemProcesses.whatDoesThisApp.text2-2' | translate"></p>
   </div>
 </div>
