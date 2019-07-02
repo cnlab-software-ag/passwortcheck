@@ -1,44 +1,45 @@
 <div class="row">
-  <div class="col-xs-10">
+  <div class="col-10">
     <div class="row">
-      <div class="col-xs-1">
+      <div class="col-1">
         <div class="row">
-          <div class="col-xs-9"
+          <div class="col-9"
                appLogoBlock
-               [backgroundColor]="'#BEC4C8'"
+               [backgroundColor]="'#D27626'"
                [height]="logo.clientHeight + 'px'">
           </div>
-          <div class="col-xs-3"
+          <div class="col-3"
                appLogoBlock
                [backgroundColor]="'#FFFFFF'"
                [height]="logo.clientHeight + 'px'">
           </div>
         </div>
       </div>
-      <div class="col-xs-9 logo-text"
+      <div class="col-9 logo-text"
            appLogoBlock
            [backgroundColor]="'#2B6B8F'"
            [height]="logo.clientHeight + 'px'"
-           [appLogoText]="(logo.clientHeight/8) + 'px'">
-        Passwortcheck
+           [appLogoText]="appLogoTextPadding(logo)">
+        {{'passwordCheck' | translate}}
       </div>
-      <div class="col-xs-1">
+      <div class="col-1">
         <div class="row">
-          <div class="col-xs-3"
+          <div class="col-3"
                appLogoBlock
                [backgroundColor]="'#FFFFFF'"
                [height]="logo.clientHeight + 'px'">
           </div>
-          <div class="col-xs-9"
+          <div class="col-9"
              appLogoBlock
              [backgroundColor]="'#BEC4C8'"
              [height]="logo.clientHeight + 'px'">
           </div>
         </div>
       </div>
+      <div class="float-right"><app-lang-selector></app-lang-selector></div>
     </div>
   </div>
-	<div class="col-xs-2"  [style.cursor]="'pointer'">
-    <a href="https://www.passwortcheck.ch" border="0" target="_blank"><img src="./assets/logo.png" class="img-responsive" width="100%" #logo (window:resize)="0"></a>
+	<div class="col-2"  [style.cursor]="'pointer'">
+    <a href="https://www.passwortcheck.ch" target="_blank"><img alt="logo" [src]="'./assets/logo.png'" class="img-fluid" width="100%" #logo></a>
   </div>
 </div>
