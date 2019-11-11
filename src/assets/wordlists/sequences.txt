@@ -1,7 +1,9 @@
 abc
+aba
 aaa
 abcd
 aaaa
+abab
 abcde
 aaaaa
 abcdef
