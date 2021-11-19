@@ -8,7 +8,7 @@ import {WordbookService} from './passwordcheck/wordbook.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  languages = ['de'];
+  languages = ['de', 'fr', 'it', 'en'];
 
   constructor(
     private translate: TranslateService,

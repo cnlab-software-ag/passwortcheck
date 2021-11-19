@@ -1,0 +1,233 @@
+{
+  "passwordCheck": "Test de mot de passe",
+  "passwordHints": "Conseils sur le mot de passe",
+  "systemProcess": "Séquence de système",
+  "statistics": "Statistique",
+  "imprint": "Mentions légales",
+  "strong": "fort",
+  "weak": "faible",
+  "password": "mot de passe",
+  "or": "ou",
+  "and": "et",
+
+  "passwordSite": {
+    "passwordLabel": "Le mot de passe à vérifier est",
+    "showPassword": "Afficher le mot de passe",
+    "passwordWillNotBeSent": "Le mot de passe saisi est vérifié localement et n'est jamais transmis au serveur.",
+    "thePasswordIs": "Le mot de passe est ",
+    "belowOneYear": " car le temps estimé pour le compromettre est inférieur à un an.",
+    "overOneYear": " parce que le temps estimé pour le compromettre est de plus d'un an.",
+    "selectedWordBooks": "Dictionnaires sélectionnés",
+    "stepsToDo": "Autres conseils et mesures de protection",
+    "hintPasswordHint": "Utilisez un mot de passe différent pour chaque service et une authentification à 2 facteurs si disponible (voir aussi ",
+    "hintMalware": "Mettre en place des ",
+    "hintHaveIBeenPawned": "Vérifier si le mot de passe figure déjà sur une ou plusieurs listes de mots de passe sur <a href=\"https://www.checktool.ch\" target=\"_blank\">MELANI Checktool</a> ou <a href=\"https://haveibeenpwned.com/passwords\" target=\"_blank\">Have i been pwned</a>."
+  },
+
+  "wordBook": {
+    "names": {
+      "datum": "Date",
+      "sequence": "Mots partiels",
+      "keyboard": "Clavier",
+      "nameList": "Liste de noms",
+      "german": "Allemand",
+      "french": "Français",
+      "italian": "Italien",
+      "rhaetoRomansch": "Rhéto-roman",
+      "english": "Anglais"
+    },
+    "source": {
+      "datum": "Date",
+      "sequence": "Mots partiels",
+      "keyboard": "Clavier",
+      "nameList": "Liste de noms",
+      "passwordList": "Liste de mots de passe",
+      "german": "Mot (allemand)",
+      "french": "Mot (français)",
+      "italian": "Mot (italien)",
+      "rhaetoRomansch": "Mot (rhéto-roman)",
+      "english": "Mot (anglais)",
+      "other": "Autres caractères"
+    },
+    "notSelectedWarning": "Le dictionnaire français n'est pas sélectionné."
+  },
+  "yearTable": {
+    "partialWords": "Mots partiels",
+    "length": "Longueur",
+    "type": "Type",
+    "roomSize": "Espace à disposition",
+    "numberOfAttempts": "Nombre de tentatives",
+    "entropy": "Entropie",
+    "computeTime": "Temps de calcul",
+    "tooltip": {
+      "roomSize": "Taille du jeu de caractères ou nombre de mots du dictionnaire, selon le type.",
+      "numberOfAttempts": "Nombre de combinaisons possibles pour ce mot partiel.",
+      "entropy": "L'entropie est une mesure du caractère aléatoire d'un texte. Plus l'entropie est élevée, plus de tentatives sont nécessaires pour deviner le texte.",
+      "computeTime": "Temps de calcul en supposant que l'attaquant peut effectuer cent milliards de tentatives par seconde. Cela correspond à un PC actuel et puissant avec des logiciels et du matériel spécialisés.",
+	  "wordBrackets": "Entre parenthèses est la version normalisée du sous-mot, qui est inclus dans le dictionnaire."
+    },
+    "costEstimated": "Estimation du temps nécessaire"
+  },
+  "timeAsText": {
+    "lessTenASecond": "Moins d'une seconde",
+    "seconds": "{{value}} secondes",
+    "minutes": "{{value}} minutes",
+    "hours": "{{value}} heures",
+    "days": "{{value}} jours",
+    "months": "{{value}} mois",
+    "years": "{{value}} années",
+    "severalMillionYears": "Plusieurs millions d'années"
+  },
+  "passwordHintsSite": {
+    "header": {
+      "passwordHints": "Conseils pour choisir un bon mot de passe",
+      "passwordSave": "Enregistrer les mots de passe",
+      "passwordAbuse": "Abus de mots de passe",
+      "protections": "Mesures de protection"
+    },
+    "buildingStrongPasswords": {
+      "text1": "Un bon mot de passe se compose d'un grand nombre aléatoire de lettres majuscules et minuscules, de chiffres et de caractères spéciaux. Comment se souvenir d'un tel mot de passe sans le noter quelque part? Il existe plusieurs méthodes. La «méthode de la phrase à mémoriser» sera expliquée plus en détail ici.",
+      "text2": "Le principe de la <b>«méthode de la phrase à mémoriser»</b> est d’utiliser une phrase entière comme mot de passe, ou de dériver le mot de passe d’une phrase mnémotechnique.",
+      "text3": "Exemple d’une phrase à mémoriser: <i>(à ne pas utiliser!)</i><br>«Mon café, je le bois toujours à 9 heures 05.»",
+      "text5": "Si une application n'accepte pas les mots de passe longs, la première lettre de chaque mot de la phrase mnémotechnique peut être utilisée pour fabriquer le mot de passe, comme dans l'exemple suivant.",
+      "text6": "Exemple de phrase mnémotechnique:<br>«<u>M</u>on <u>c</u>afé, <u>j</u>e <u>l</u>e <u>b</u>ois <u>t</u>oujours <u>à</u> <u>9</u> <u>h</u>eures <u>05</u><u>.</u>»",
+      "text7": "Exemple de mot de passe: <i>(à ne pas utiliser!)</i><br>Mcjlbtà9h05.",
+      "text8": "Vous pouvez adapter, modifier, personnaliser et corser ce système à volonté – il n'y a presque pas de limite à votre créativité. Vous pouvez, par exemple, inverser les majuscules et les minuscules. L’essentiel est que le système reste simple et reproductible.",
+      "text9": "Si l'application prend en charge l'authentification à deux facteurs, il convient d’activer celle-ci comme protection supplémentaire.",
+      "subtitle": "Mots de passe: les pièges à éviter",
+      "text10": "Il faut éviter les termes ou les nombres trop faciles à deviner. En font partie des mots simples, des noms, des dates de naissance ou des chiffres d’années. En outre, il ne faut pas remplacer des lettres par des chiffres ou des caractères spéciaux – par exemple utiliser  «4» au lieu de «A» – méthode qui s’appelle «leet» ou «<a href=\"https://fr.wikipedia.org/wiki/Leet_speak\" target=\"_blank\">leet speak</a>» en jargon technique.",
+      "text11": "Il faut utiliser un mot de passe individuel pour chaque service."
+    },
+    "secureStoringPasswords": {
+      "text1-1": "Un mot de passe ne doit jamais être noté. Cela a l’air évident, mais ce n’est pas toujours facile à mettre en œuvre dans la pratique, d'autant plus que différents mots de passe doivent être utilisés pour différents services et sites Web (voir: ",
+      "text1-2": "). Très peu de gens parviennent à mémoriser et garder tous leurs mots de passe en tête. Un gestionnaire de mots de passe peut venir en aide.",
+      "text2": "Un programme de gestion des mots de passe facilite la création, l'administration et l'utilisation de mots de passe sécurisés. Avec le gestionnaire de mots de passe, vous n'avez plus qu'à mémoriser le mot de passe principal à indiquer au gestionnaire de mots de passe ainsi que les mots de passe pour les services vraiment sensibles tels que l'e-banking. Vous trouverez de plus amples informations sur les gestionnaires de mots de passe dans la fiche d'information <a href=\"https://dsb.zh.ch/internet/datenschutzbeauftragter/de/publikationen/anleitungen/_jcr_content/contentPar/form_0/formitems/passwortmanager/download.spooler.download.1485878383609.pdf/Merkblatt_Vergleich_Passwortmanager.pdf\" target=\"_blank\">Password Manager</a> (en allemand).",
+      "text3": "Principes de base pour le stockage sécurisé des mots de passe:",
+      "text4": "Un programme de gestion des mots de passe facilite la création et l'utilisation de mots de passe sécurisés.",
+      "text5": "Se souvenir des mots de passe les plus importants à indiquer au gestionnaire de mots de passe ainsi que des mots de passe pour les services sensibles tels que l'e-banking et ne jamais les noter nulle part.",
+      "text6": "Ne jamais noter des mots de passe de manière non protégée, par exemple sur un post-it glissé sous le clavier."
+    },
+    "passwordAbuse": {
+      "text1": "Des personnes non autorisées peuvent accéder à un mot de passe de différentes manières. Une méthode consiste à deviner le mot de passe:",
+      "text2": "De nombreux utilisateurs utilisent des mots qu'ils peuvent facilement retenir, provenant par exemple de leur entourage personnel. Ainsi, deviner un mot de passe est le moyen le plus facile et généralement le plus rapide d'accéder à un système informatique (deviner des mots de passe / Password Guessing).",
+      "text3": "Des mots de passe simples ou courts peuvent être crackés en testant, une à une, toutes les combinaisons possibles de manière systématique (attaque par force brute). Les chances de succès de cette méthode peuvent être limitées par des mots de passe forts.",
+      "text3-1": "Pour obtenir des conseils sur la création et l'enregistrement des mots de passe, consultez les pages ",
+      "text3-2": ".",
+      "text4": "Les mots de passe peuvent également être lus à partir du système ou suivis pendant la transmission. Les méthodes les plus courantes sont:",
+
+      "text5": "Une personne est attirée par hameçonnage (lien dans un courriel) vers un faux site Web qui ressemble beaucoup au vrai site. La personne est alors invitée à entrer son nom d'utilisateur et son mot de passe. Si l'information est entrée, l'attaquant obtient les données du mot de passe.",
+      "text6": "Les keyloggers (logiciels malveillants spéciaux) sont utilisés pour surveiller et enregistrer toutes les frappes du clavier à l’insu de l’utilisateur pour pouvoir ensuite les reconstruire. Les keyloggers sont également utilisés par des personnes non autorisées pour s’emparer des mots de passe.",
+      "text7": "Si les mots de passe sont transmis sans être cryptés, il est facile pour les personnes non autorisées d’y accéder. C'est le cas, par exemple, lorsque vous utilisez un accès Web non crypté, reconnaissable à l'abréviation «http» dans le champ adresse du navigateur. Les connexions cryptées, telles que l'accès Web via TLS/SSL, permettent de réduire ce risque de manière considérable. Une connexion cryptée est indiquée par l'abréviation «<b>https</b>» dans le champ adresse du navigateur.",
+      "text8": "Des mesures simples pour protéger les mots de passe se trouvent sous "
+    },
+    "protections": {
+      "text1": "Il est essentiel de protéger les appareils sur lesquels les mots de passe sont utilisés.",
+      "text2": "Les cinq mesures suivantes permettent de mieux protéger les appareils, les données et donc aussi le mot de passe:",
+      "text3": "Protéger les renseignements personnels",
+      "text4": "Repousser les attaques (Pare-feu, installer des correctifs, protection antivirus)",
+      "text5": "Empêcher l'accès par des personnes non autorisées",
+      "text6": "Crypter le contenu sensible",
+      "text7": "Sauvegarder / supprimer des informations",
+      "text8": "",
+      "text9": "Pour plus d'informations sur la protection des smartphones et des PC ainsi que sur les bons comportements sur Internet, visitez les sites Web suivants:",
+      "text10": "Préposé à la protection des données du canton de Zurich (en allemand):",
+      "text10.1": "<a href=\"https://dsb.zh.ch/internet/datenschutzbeauftragter/de/mein-datenschutz/digitaler-selbstschutz.html\" target=\"_blank\">Autoprotection numérique</a>",
+      "text10.2": "<a href=\"https://dsb.zh.ch/internet/datenschutzbeauftragter/de/publikationen/anleitungen/_jcr_content/contentPar/form/formitems/pc_sicherheit/download.spooler.download.1520842016466.pdf/Checkliste_PC-Sicherheit.pdf\" target=\"_blank\">Sécurité de votre PC</a>",
+      "text10.3": "<a href=\"https://dsb.zh.ch/internet/datenschutzbeauftragter/de/publikationen/anleitungen/_jcr_content/contentPar/form/formitems/smartphone_sicherhei/download.spooler.download.1509975972026.pdf/Checkliste_Smartphone-Sicherheit.pdf\" target=\"_blank\">Sécurité des Smartphones</a>",
+      "text11": "Sécurité des Smartphones BSI (Office fédéral de la sécurité des technologies de l'information pour les citoyens allemand): <a href=\"https://www.bsi-fuer-buerger.de\" target=\"_blank\">https://www.bsi-fuer-buerger.de</a>",
+      "text12": "iBarry par Swiss Internet Security Alliance: <a href=\"https://ibarry.ch/fr/\" target=\"_blank\">https://ibarry.ch/fr/</a>",
+      "text13": "eBanking en toute sécurité!: <a href=\"https://ebankingabersicher.ch/fr/\" target=\"_blank\">https://ebankingabersicher.ch/fr/</a>"
+    }
+  },
+  "systemProcesses": {
+    "header": {
+      "systemSetup": "Structure du système",
+      "checkSequence": "Procédure d'examen",
+      "crackingPasswords": "Cracker des mots de passe",
+      "whatDoesThisApp": "Que fait le passwordcheck?",
+      "newMethods": "Nouvelles méthodes"
+    },
+    "systemSetup": {
+      "text1": "Le passwordcheck se compose d'un serveur web, d'une application de contrôle de mot de passe et d'une base de données.",
+      "subtitle1": "Serveur Web",
+      "text1-1": "Le serveur Web représente l'interface avec l'utilisateur. Il fournit le contrôle des mots de passe, gère les statistiques dans une base de données et les présente sous forme de pages Web.",
+      "subtitle2": "Application de vérification de mot de passe",
+      "text2-1-1": "Le passwordcheck est le point central de l'application et sert à évaluer la force d'un mot de passe saisi. Le passwordcheck est codé en <a href=\"https://fr.wikipedia.org/wiki/JavaScript\" target=\"_blank\">JavaScript</a>. Les programmes JavaScript sont chargés par le navigateur et exécutés sur l'ordinateur de l'utilisateur. Par conséquent, aucun mot de passe et aucune autre donnée d'utilisateur privée n'est envoyé au serveur. Tous les calculs sont effectués sur l'ordinateur de l'utilisateur. Les données sont effacées lorsque le navigateur est fermé. Pour générer des statistiques sur la fréquence des mots de passe forts et faibles, JavaScript envoie le résultat au serveur. La seule information transmise ici est celle du résultat du test, c’est à dire si le mot de passe est considéré comme ",
+      "text2-1-2": ".",
+      "text2-2-1": "La vérification du mot de passe saisi est décrite sur la page ",
+      "text2-2-2": ".",
+      "subtitle3": "Banque de données",
+      "text3-1-1": "La base de données recueille des informations sur la qualité (",
+      "text3-1-2": ") du mot de passe vérifié à des fins statistiques.",
+      "text3-2": "<b>Seuls les résultats du contrôle sont sauvegardés. Les mots de passe ne sont jamais transmis au serveur.</b>"
+    },
+    "checkSequence": {
+      "text0-1": "Le passwordcheck évalue la force des mots de passe en fonction de la probabilité du nombre de tentatives dont un attaquant aura besoin pour trouver le mot de passe.",
+      "text0-2": "Cela dépend principalement de la longueur du mot de passe et du jeu de caractères utilisé. Si un mot de passe contient des mots, des chiffres ou des motifs de clavier connus, un attaquant peut en profiter. Au lieu d'essayer au hasard de longues séquences de caractères, il essaiera d'abord de combiner des mots provenant des dictionnaires, des dates, des motifs de clavier, etc. Cela réduit considérablement le nombre de tentatives nécessaires.",
+      "text0-3": "Par conséquent, le passwordcheck recherche les composants suivants:",
+      "text0-4": "Mots du dictionnaire allemand, français, italien, rhéto-roman et anglais (selon le choix de l'utilisateur)",
+      "text0-5": "Motifs de clavier sur le clavier suisse (par exemple «qwertz»)",
+      "text0-6": "Séries de numéros et séquences alphabétiques (par exemple «1234», «abcd»)",
+      "text0-7": "Dates (par exemple «03.06.2109»)",
+      "text0-8": "Lors de la recherche dans le dictionnaire, les majuscules et minuscules modifiées ainsi que l'orthographe <a href=\"https://fr.wikipedia.org/wiki/Leet_speak\" target=\"_blank\">l33t</a> sont également reconnus. Ainsi, par exemple, cHAt, m@ison et f3nêtre sont reconnus comme des mots.",
+      "text0-9": "Le passwordcheck calcule le nombre probable de combinaisons qu'il faudra essayer pour casser le mot de passe. Tout d'abord, comme indiqué plus haut, il recherche les mots du dictionnaire et d’éventuels motifs du clavier dans le mot de passe. Ensuite et le mot de passe est décomposé en ses composants.",
+      "subtitle1": "",
+      "text1-1": "Le passwordcheck calcule le nombre probable de combinaisons qu'il faudra essayer pour casser le mot de passe. Tout d'abord, comme indiqué plus haut, il recherche les mots du dictionnaire et d’éventuels motifs du clavier dans le mot de passe. Ensuite et le mot de passe est décomposé en ses composants.",
+      "text1-2": "Ensuite, pour chaque mot partiel, on calcule combien de possibilités un attaquant aurait à tenter:",
+      "text1-3": "Pour les mots des dictionnaires chargés, le nombre de possibilités est égal à la taille du dictionnaire. Puisque le système fait la distinction entre majuscules et minuscules et reconnaît le l33t, la taille du dictionnaire doit être multipliée par 10.",
+      "text1-4": "Pour les motifs de clavier, les séries de nombres et les séquences alphabétiques, c'est le nombre de combinaisons possibles qui est pris en compte.",
+      "text1-5": "Pour les autres caractères ne faisant partie ni d'un mot, ni d'un motif, le nombre de possibilités est <i>k</i><sup><i>n</i></sup>, où <i>k</i> est le nombre de caractères possibles et n la longueur.",
+      "text1-6": "Pour estimer le temps nécessaire, on suppose qu'un attaquant peut effectuer cent milliards de tentatives par seconde. Cela correspond à la puissance de calcul d'un PC performant doté d'un logiciel et d'un matériel spécialisés.",
+      "text1-7-1": "Un mot de passe doit résister à une attaque ",
+      "text1-7-2": "pendant plus d'un an ",
+      "text1-7-3": " pour être considéré comme ",
+      "text1-7-4": ".",
+      "img": "./assets/procedure_examen.png",
+      "img-alt": "Figure 1: Example estimer le temps nécessaire"
+    },
+    "crackingPasswords": {
+      "text1": "La façon la plus simple de craquer un mot de passe est d'essayer toutes les possibilités l'une après l'autre. Cette méthode prend énormément de temps car le nombre de possibilités augmente de manière exponentielle avec la longueur du mot de passe.",
+      "text2": "Comme la plupart des gens ne choisissent pas leurs mots de passe au hasard, les outils de craquage de mots de passe ambitieux ont recours à des dictionnaires de mots de passe spéciaux. Ces dictionnaires contiennent, en plus des mots normaux d'un dictionnaire, d'autres séquences de caractères courantes telles que des motifs de clavier ou des séries de nombres du type 12345. Ils prennent également en compte du fait que les lettres sont souvent remplacées par d'autres caractères, par exemple «E» par «3» ou «A» par «@» (orthographe  <a href=\"https://fr.wikipedia.org/wiki/Leet_Speak\" target=\"_blank\">leet speak / l33t</a>). L'utilisation de dictionnaires de mots de passe et la prise en compte de l'orthographe l33t réduisent le nombre de tentatives de craquage nécessaires de manière significative.",
+      "text3": "Les attaques en ligne et hors ligne se déroulent différemment. Si, par exemple, un ordinateur portable est perdu, une personne non autorisée peut faire une copie du disque dur et tenter des milliards de mots de passe potentiels différents sur son propre ordinateur. Pour son estimation du temps requis, le passwordcheck suppose que l'attaquant peut effectuer des centaines de milliards de tentatives par seconde.",
+      "text5": "Les services en ligne peuvent également être affectés par une attaque hors ligne. Si une personne parvient à copier des bases de données de mots de passe, elle peut effectuer plusieurs tentatives par seconde sur son propre ordinateur.",
+      "text6": "Le vol de bases de données de mots de passe est également délicat pour une autre raison: Ces bases de données contiennent souvent des données d’utilisateur supplémentaires, telles que le nom et l'adresse e-mail. Comme de nombreux utilisateurs utilisent le même mot de passe pour plusieurs services, les attaquants peuvent tenter de se connecter à d'autres services avec les données de courriel et de mot de passe volées."
+    },
+    "whatDoesThisApp": {
+      "subtitle1": "Ce qu’il fait",
+      "text1-1": "Le passwordcheck vérifie que le mot de passe ne contient pas de séquences de caractères usuelles auxquelles un attaquant peut s’attendre, ce qui simplifie considérablement le craquage. Il s'agit de mots du dictionnaire, de modèles de clavier, de séquences de nombres etc.",
+      "text1-2": "L'effort de recherche voulu est estimé sur la base des séquences de caractères trouvées.",
+      "text1-5": "Pour plus de détails sur la procédure d'évaluation, voir la page ",
+	  "text1-6": ".",
+      "subtitle2": "Ce qu’il ne fait pas",
+      "text2-1": "Les risques liés aux recherches ciblées ne peuvent être couverts par un passwordcheck générique. Le contrôle du mot de passe fonctionne sur la base de dictionnaires généraux. Ceux-ci répertorient notamment des noms communs dans différentes langues. Un agresseur qui cible une victime spécifique peut inclure ce qu’il sait de la personne: Date de naissance, nom, adresse, données de famille, noms d'enfants ou d'animaux domestiques, etc.",
+      "text2-2": "Le passwordcheck ne peut pas non plus prendre en compte le risque qu'un mot de passe parvienne à la connaissance de personnes non autorisées par un autre biais, par exemple par le stockage non sécurisé du mot de passe sur l’ordinateur ou par l'espionnage avec des logiciels malveillants."
+    },
+    "newMethods":{
+      "text1": "Le passwordcheck du préposé à la protection des données du canton de Zurich présente les particularités suivantes:",
+      "text2": "Tous les contrôles sont effectués localement dans le navigateur de l'utilisateur. Aucun mot de passe n'est envoyé à un serveur.",
+      "text3": "Le contrôle s'effectue en temps réel. Avec chaque lettre tapée, l’utilisateur peut voir comment l’évaluation de la force de son mot de passe par le système change.",
+      "text4": "Des dictionnaires pour l'allemand standard suisse, l'italien, le français, le romanche et l'anglais sont disponibles et peuvent être sélectionnés par l'utilisateur.",
+      "text5": "La recherche par mots reconnaît également les formes usuelles de modifications (<a href=\"https://fr.wikipedia.org/wiki/Leet_Speak\" target=\"_blank\">leet speak / l33t</a>).",
+      "text6": "Les motifs de clavier sont reconnus sur la base du clavier suisse.",
+      "text7": "Le code source et la méthode appliquée sont ouverts et accessibles à tous (<a href=\"https://www.github.com/cnlab-software-ag/passwortcheck.git\" target=\"_blank\">Github Repository</a>)."
+    }
+  },
+  "imprintSite": {
+    "contact": "Contact",
+    "phone": "Téléphone",
+    "email": "E-mail",
+    "website": "Web site",
+    "socialMedia": "Social media",
+    "twitterChannel": "Chaîne Twitter de DSB",
+    "youtubeChannel": "chaîne Youtube de DSB",
+    "dsbApp": "Datenschutz App",
+    "androidVersion": "version Android",
+    "iosVersion": "Version iOS",
+    "developer": "Développeur",
+    "sourceCode": "Code source",
+    "sourceCodeText": "Le code source et la méthode appliquée sont ouverts et accessibles sous <a href=\"https://opensource.org/licenses/bsd-license.php\" target=\"_blank\">BSD-2-Clause</a> à tous <a href=\"https://www.github.com/cnlab-software-ag/passwortcheck.git\" target=\"_blank\">GIT-Hub</a>.",
+    "privacyStatement": "Charte de confidentialité",
+	"privacyStatementText": "Pendant l'accès au test de mot de passe de la protection des données du canton de Zurich, l'adresse IP est temporairement utilisée pour mettre à jour les statistiques. Après cela, l'adresse IP est supprimée.",
+    "version": ""
+  }
+}

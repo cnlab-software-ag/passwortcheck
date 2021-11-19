@@ -1,0 +1,235 @@
+{
+  "passwordCheck": "Test della password",
+  "passwordHints": "Consigli per la scelta della password",
+  "systemProcess": "Funzionamento",
+  "statistics": "Statistica",
+  "imprint": "Colofone",
+  "strong": "forte",
+  "weak": "debole",
+  "password": "password",
+  "or": "o",
+  "and": "e",
+
+  "passwordSite": {
+    "passwordLabel": "Password da verificare",
+    "showPassword": "Visualizzare la password",
+    "passwordWillNotBeSent": "La password inserita è verificata localmente e non viene mai trasmessa al server.",
+    "thePasswordIs": "La password è",
+     "belowOneYear": " perché il tempo stimato per decifrarla è inferiore a un anno.",
+	 "overOneYear": " perché il tempo stimato per decifrarla è superiore a un anno.",
+    "selectedWordBooks": "Dizionari selezionati",
+    "stepsToDo": "Ulteriori consigli e misure di protezione:",
+    "hintPasswordHint": "Utilizzare una password diversa per ogni servizio e, qualora disponibile, l’autenticazione a due fattori (vedi anche ",
+    "hintMalware": "Garantire  ",
+    "hintHaveIBeenPawned": "Verificare se la password è già contenuta in uno o più elenchi di password su <a href=\"https://www.checktool.ch\" target=\"_blank\">MELANI Check Tool</a> o su <a href=\"https://haveibeenpwned.com/passwords\" target=\"_blank\">Have I been pwned?</a>"
+  },
+
+  "wordBook": {
+    "names": {
+      "datum": "Data",
+      "sequence": "Sequenza",
+      "keyboard": "Tastiera",
+      "nameList": "Elenco nominativo",
+      "german": "Tedesco",
+      "french": "Francese",
+      "italian": "Italiano",
+      "rhaetoRomansch": "Romancio",
+      "english": "Inglese"
+    },
+    "source": {
+      "datum": "Data",
+      "sequence": "Sequenza",
+      "keyboard": "Tastiera",
+      "nameList": "Elenco nominativo",
+      "passwordList": "Elenco delle password",
+      "german": "Parola (in tedesco)",
+      "french": "Parola (in francese)",
+      "italian": "Parola (in italiano)",
+      "rhaetoRomansch": "Parola (in romancio)",
+      "english": "Parola (in inglese)",
+      "other": "Altri caratteri"
+    },
+    "notSelectedWarning": "Il dizionario italiano non è selezionato."
+  },
+  "yearTable": {
+    "partialWords": "Parole parziali",
+    "length": "Lunghezza",
+    "type": "Typo",
+    "roomSize": "Spazio disponibile",
+    "numberOfAttempts": "Numero di tentativi",
+    "entropy": "Entropia",
+    "computeTime": "Tempo di calcolo",
+    "tooltip": {
+      "roomSize": "Grandezza del set di caratteri o numero delle parole nel vocabolario, a seconda del tipo.",
+      "numberOfAttempts": "Numero delle combinazioni possibili per questa parola parziale.",
+      "entropy": "L’entropia misura la casualità di un testo. Più l’entropia è elevata, più il numero dei tentativi necessari per indovinare il testo aumenta.",
+      "computeTime": "Tempo di calcolo partendo dal presupposto che l’hacker è in grado di effettuare cento miliardi di tentativi al secondo. Ciò corrisponde alla performance di un computer attuale ed efficiente dotato di software e hardware specializzati.",
+      "wordBrackets": "All'interno delle parentesi troverai la sottostringa che è normalizzata e può essere trovata nel dizionario."
+    },
+    "costEstimated": "Stima del tempo necessario"
+  },
+  "timeAsText": {
+    "lessTenASecond": "Meno di un secondo",
+    "seconds": "{{value}} secondi",
+    "minutes": "{{value}} minuti",
+    "hours": "{{value}} ore",
+    "days": "{{value}} giorni",
+    "months": "{{value}} mesi",
+    "years": "{{value}} anni",
+    "severalMillionYears": "Diversi milioni di anni"
+  },
+  "passwordHintsSite": {
+    "header": {
+      "passwordHints": "Consigli per la scelta della password",
+      "passwordSave": "Salvare le password",
+      "passwordAbuse": "Abuso delle password",
+      "protections": "Misure di protezione"
+    },
+    "buildingStrongPasswords": {
+      "text1": "Una buona password è composta da un numero elevato e casuale di lettere maiuscole e minuscole, numeri e caratteri speciali. Come ricordare la password anche senza annotarla? Esistono vari metodi. Il metodo della «frase promemoria per la password» è spiegato di seguito.",
+      "text2": "Il metodo della <b>«frase promemoria per la password»</b> consiste nell’utilizzare una frase di senso compiuto come password o come spunto per ricordarla.",
+      "text3": "Esempio di frase promemoria: <i>(si prega di non utilizzarla)</i><br>«Prendo sempre il caffè alle 9 e 5.»",
+      "text5": "Se un’applicazione non accetta le password lunghe, si può sempre utilizzare la prima lettera di ogni parola della frase promemoria, come nell’esempio seguente.",
+      "text6": "Esempio di frase promemoria:<br>«<u>P</u>rendo <u>s</u>empre <u>i</u>l <u>c</u>affè <u>a</u>lle <u>9</u> <u>e</u> <u>5.</u>»",
+      "text7": "Esempio di password: <i>(si prega di non utilizzarla)</i><br>Psica9e5.",
+      "text8": "Il sistema può essere adattato e modificato individualmente. Non vi sono quasi limiti alla creatività. Ad esempio si possono invertire le maiuscole e le minuscole. L’importante è che il sistema rimanga semplice e applicabile.",
+      "text9": "Se l’applicazione supporta l’autenticazione a due fattori sarebbe opportuno attivarla per garantire una maggiore protezione.",
+      "subtitle": "Password: i tranelli da evitare",
+      "text10": "I termini o i numeri facili da indovinare dovrebbero essere evitati. Rientrano in questa categoria ad esempio parole semplici, nomi, date di nascita o anni. Allo stesso modo occorre evitare di sostituire lettere con cifre o caratteri speciali (ad es. sostituzione della A con un 4), definito in gergo tecnico «<a href=\"https://it.wikipedia.org/wiki/Leet\" target=\"_blank\">leet</a>».",
+      "text11": "Si dovrebbe utilizzare una password diversa per ogni servizio."
+    },
+    "secureStoringPasswords": {
+      "text1-1": "Non si dovrebbe mai annotare una password. Sembra ovvio, ma nella pratica non è sempre semplice, anche perché si dovrebbero utilizzare password diverse per i vari servizi e siti Web (vedi anche ",
+      "text1-2": "). Pochissime persone riescono a memorizzare tutte le password. Può allora essere utile utilizzare un sistema di gestione delle password («password manager»).",
+      "text2": "Un programma di gestione delle password facilita la creazione, la gestione e l’utilizzo di password sicure. Vi basterà ricordare la password principale per il password manager e le password per i servizi sensibili come l’e-banking. Per ulteriori informazioni sui password manager si rimanda al <a href=\"https://dsb.zh.ch/internet/datenschutzbeauftragter/de/publikationen/anleitungen/_jcr_content/contentPar/form_0/formitems/passwortmanager/download.spooler.download.1485878383609.pdf/Merkblatt_Vergleich_Passwortmanager.pdf\" target=\"_blank\">promemoria</a> dedicato a questo argomento (in tedesco).",
+      "text3": "Principi per salvare le password in modo sicuro:",
+      "text4": "Un programma di gestione delle password facilita la creazione e l’utilizzazione di password sicure;",
+      "text5": "Ricordare (e mai annotare!) la password principale di accesso al password manager e quella per i servizi sensibili;",
+      "text6": "Annotare le password in luogo sicuro, quindi ad esempio mai su un post-it sotto la tastiera."
+    },
+    "passwordAbuse": {
+      "text1": "Persone non autorizzate possono accedere a una password con modalità diverse. Una di queste è indovinarla:",
+      "text2": "Molti utenti utilizzano parole che possono essere facilmente ricordate, ad esempio dal loro entourage. In questo modo, indovinare una password è il metodo più semplice e spesso anche più rapido per accedere a un computer («password guessing»);",
+      "text3": "Password brevi o semplici possono essere violate tramite tentativi sistematici («brute force attack»). Le probabilità che questo metodo fallisca possono essere aumentate utilizzando password sicure.",
+      "text3-1": "Consigli per creare e salvare le password sono reperibili alle pagine ",
+      "text3-2": ".",
+      "text4": "Le password possono anche essere lette dal sistema o seguite durante la trasmissione di dati. I metodi più diffusi sono i seguenti:",
+
+      "text5": "Una persona viene attirata su un sito Web falsificato tramite phishing (link inviato per e-mail) molto simile all’originale. Le viene poi chiesto di inserire il nome utente e la password. Se i dati vengono inseriti l’hacker ottiene la password.",
+      "text6": "I «keylogger» (malware speciali) vengono utilizzati allo scopo di monitorare e registrare tutto ciò che viene digitato sulla tastiera all’insaputa dell’utente. I keylogger sono anche utilizzati da persone non autorizzate per ottenere le password;",
+      "text7": "Se la trasmissione delle password avviene senza crittografia, per le persone non autorizzate è facile ottenere le password. Ciò succede ad esempio quando si utilizza un accesso Web non criptato, riconoscibile dall’abbreviazione «http» nell’URL. Questo rischio si riduce fortemente se si ricorre a connessioni criptate, ad esempio con l’acceso tramite TLS/SSL. Una connessione criptata è indicata dall’abbreviazione «<b>https</b>» nel campo dell’indirizzo del browser.",
+      "text8": "Semplici misure di protezione delle password sono disponibili alla pagina "
+    },
+    "protections": {
+      "text1": "È essenziale proteggere i dispositivi sui quali le password sono utilizzate.",
+      "text2": "Le cinque misure seguenti aiutano a proteggere meglio i dispositivi, i dati e al contempo anche la password:",
+      "text3": "Proteggere le informazioni personali",
+      "text4": "Scongiurare gli attacchi (firewall, installa gli aggiornamenti, protezione da malware)",
+      "text5": "Impedire l’accesso a persone non autorizzate",
+      "text6": "Criptare i contenuti sensibili",
+      "text7": "Salvare / cancellare le informazioni",
+      "text8": "",
+      "text9": "Ulteriori informazioni in merito agli smartphone e alla sicurezza informatica nonché a un comportamento corretto su Internet sono disponibili sui seguenti siti Web:",
+      "text10": "Incaricato della protezione dei dati del Cantone di Zurigo (in tedesco)",
+      "text10.1": "<a href=\"https://dsb.zh.ch/internet/datenschutzbeauftragter/de/mein-datenschutz/digitaler-selbstschutz.html\" target=\"_blank\">Sicurezza personale digitale</a>",
+      "text10.2": "<a href=\"https://dsb.zh.ch/internet/datenschutzbeauftragter/de/publikationen/anleitungen/_jcr_content/contentPar/form/formitems/pc_sicherheit/download.spooler.download.1520842016466.pdf/Checkliste_PC-Sicherheit.pdf\" target=\"_blank\">Sicurezza informatica</a>",
+      "text10.3": "<a href=\"https://dsb.zh.ch/internet/datenschutzbeauftragter/de/publikationen/anleitungen/_jcr_content/contentPar/form/formitems/smartphone_sicherhei/download.spooler.download.1509975972026.pdf/Checkliste_Smartphone-Sicherheit.pdf\" target=\"_blank\">Sicurezza degli smartphone</a>",
+      "text11": "BSI (ufficio federale tedesco per la sicurezza delle tecnologie dell’informazione): <a href=\"https://www.bsi-fuer-buerger.de\" target=\"_blank\">https://www.bsi-fuer-buerger.de</a>",
+      "text12": "iBarry di Swiss Internet Security Alliance: <a href=\"https://ibarry.ch/it/\" target=\"_blank\">https://ibarry.ch/it/</a>",
+      "text13": "eBanking ma sicuro!: <a href=\"https://ebankingabersicher.ch/it/\" target=\"_blank\">https://ebankingabersicher.ch/it/</a>"
+    }
+  },
+  "systemProcesses": {
+    "header": {
+      "systemSetup": "Struttura del sistema",
+      "checkSequence": "Processo di verifica",
+      "crackingPasswords": "Craccare le password",
+      "whatDoesThisApp": "Cosa fa concretamente il test della password?",
+      "newMethods": "Nuovi metodi"
+    },
+    "systemSetup": {
+      "text1": "Il test della password è composto dalle componenti server Web, dall’apposita applicazione e da una banca dati.",
+      "subtitle1": "Server Web",
+      "text1-1": "Il server Web rappresenta l’interfaccia con l’utente, fornisce il test della password, gestisce le statistiche in una banca data e le presenta sotto forma di pagine Web.",
+      "subtitle2": "Applicazione per il test della password",
+      "text2-1-1": "Il test della password, implementato in <a href=\"https://it.wikipedia.org/wiki/JavaScript\" target=\"_blank\">JavaScript</a>, è il cuore dell’applicazione e contribuisce a valutare i punti di forza della password inserita. I programmi JavaScript sono caricati dal browser ed eseguiti sul computer dell’utente. Di conseguenza, non vengono inviati al server né password né altri dati privati dell’utente. Tutti i calcoli sono effettuati sul computer dell’utente. Una volta chiuso il browser i dati vengono cancellati. Per produrre una statistica sulla frequenza delle password forti e deboli, JavaScript invia il risultato al server. L’unica informazione inviata è quella relativa al risultato del test, ovvero se la password è  ",
+      "text2-1-2": ".",
+      "text2-2-1": "La verifica della password è descritta alla pagina ",
+      "text2-2-2": " .",
+      "subtitle3": "Banca dati",
+      "text3-1-1": "Nella banca dati sono raccolte informazioni sulla qualità (",
+      "text3-1-2": ") della password verificata a fini statistici.",
+      "text3-2": "<b>In questo caso, sono salvati soltanto i risultati della verifica. Le password non sono mai inviate al server.</b>"
+    },
+    "checkSequence": {
+      "text0-1": "Il test della password valuta il grado di sicurezza delle password in funzione del probabile numero di tentativi necessari all’hacker per indovinare una password.",
+      "text0-2": "In primo luogo, ciò dipende dalla lunghezza della password e dalla serie di caratteri utilizzati. Se la password contiene parole, serie numeriche o sequenze di tastiera conosciute, l’hacker può usarle a suo vantaggio. Invece di provare a inserire lunghe sequenze di caratteri a caso, proverà a utilizzare e a combinare parole provenienti da dizionari, date, sequenze di tastiera o simili. Ciò riduce sensibilmente il numero di tentativi necessari.",
+      "text0-3": "Di conseguenza, il test della password cerca le seguenti componenti:",
+      "text0-4": "Parole dai dizionari italiano, tedesco, francese, romancio e inglese (a seconda della scelta dell’utente)",
+      "text0-5": "Sequenze di tastiera sulla tastiera svizzera (ad es. «qwertz»)",
+      "text0-6": "Sequenze numeriche e alfabetiche (ad es. «1234» e «abcd»)",
+      "text0-7": "Date (ad. es. «03.06.2019»)",
+      "text0-8": "Per la ricerca nel vocabolario vengono considerate anche le modifiche di minuscole e maiuscole e la scrittura <a href=\"https://it.wikipedia.org/wiki/Leet\" target=\"_blank\">leet</a>. Di conseguenza, sequenze come ad esempio gaTTo, C@sa e L3tto sono riconosciute come parole.",
+      "text0-9": "",
+      "subtitle1": "",
+      "text1-1": "Il test della password calcola il probabile numero di combinazioni che dovrebbero essere provate per trovare la password. Come detto, prima cerca le parole dei dizionari e le sequenze di tastiera nella password, che poi viene scomposta nelle sue componenti.",
+      "text1-2": "Per ogni parola parziale viene calcolato il numero di possibilità che un hacker dovrebbe provare:",
+      "text1-3": "Per le parole tratte dai dizionari caricati, il numero delle possibilità è uguale alla grandezza del dizionario. Poiché il sistema fa distinzione tra maiuscole e minuscole e riconosce la scrittura leet, la grandezza del dizionario è moltiplicata per 10",
+      "text1-4": "Per le sequenze di tastiera, di cifre e l’ordine alfabetico il numero corrisponde alle combinazioni possibili",
+      "text1-5": "Per gli altri caratteri che non fanno parte né di una parola né di una sequenza, il numero corrisponde alle possibilità <i>k</i><sup><i>n</i></sup>, dove <i>k</i> rappresenta il numero di caratteri possibili e <i>n</i> la lunghezza.",
+      "text1-6": "Per valutare il tempo necessario, si presuppone che l’hacker possa effettuare cento miliardi di tentativi al secondo. Ciò corrisponde alla capacità di calcolo di un computer efficiente dotato di software e hardware specializzati.",
+      "text1-7-1": "Una password deve resistere a un attacco per ",
+      "text1-7-2": "più di un anno ",
+      "text1-7-3": "per essere considerata  ",
+      "text1-7-4": ".",
+      "img": "./assets/processo_verifica.png",
+      "img-alt": "Figura 1: esempio di una stima del tempo necessario"
+    },
+    "crackingPasswords": {
+      "text1": "Il metodo più semplice per craccare una password consiste nel provare tutte le possibilità una dopo l’altra. Questo metodo è molto dispendioso in termini di tempo, poiché il numero delle possibilità aumenta in modo esponenziale con la lunghezza della password.",
+      "text2": "Siccome la maggior parte delle persone non sceglie a caso la propria password, per decifrare le password, i programmi ambiziosi ricorrono a speciali dizionari di password, che contengono, oltre alle parole abituali di un dizionario, altre catene di caratteri comuni quali sequenze di tastiera o di cifre (ad es. 12345). Inoltre, si deve considerare che spesso le lettere possono essere sostituite da altri caratteri, come ad esempio la E dal numero 3 o la A dal segno @, metodo conosciuto con il nome di <a href=\"https://it.wikipedia.org/wiki/Leet\" target=\"_blank\">leet o l33t</a>. L’utilizzo di dizionari specializzati nelle password e il ricorso alla forma codificata l33t diminuisce il numero di tentativi necessari.",
+      "text3": "Gli attacchi online e offline sono sferrati con metodologie diverse. Se ad esempio un computer portatile viene rubato, la persona non autorizzata può effettuare una copia del disco rigido e provare miliardi di potenziali password con l’ausilio del proprio computer. Per stimare il tempo necessario, il test della password parte dal presupposto che il criminale è in grado di effettuare cento miliardi di tentativi al secondo.",
+      "text5": "Anche i servizi online possono essere colpiti da un attacco offline. Se una persona riesce a copiare banche dati di password, è anche in grado di effettuare sul proprio computer un numero elevatissimo di tentativi al secondo.",
+      "text6": "La sottrazione di banche dati di password è delicata per un altro motivo: queste banche dati contengono spesso altri dati degli utenti, come il loro nome o l’indirizzo e-mail. Visto che molti utenti utilizzano la stessa password per accedere a più servizi, gli hacker provano a entrare in altri servizi sfruttando l’indirizzo e-mail e i dati relativi alla password sottratti."
+    },
+    "whatDoesThisApp": {
+      "subtitle1": "Cosa fa",
+      "text1-1": "Il test verifica che la password non contenga sequenze di caratteri comuni che l’hacker si aspetta di trovare e che di conseguenza la rendono molto più vulnerabile. Si tratta di parole contenute nel dizionario, sequenze di tastiera, di cifre ecc.",
+      "text1-2": "Il tempo di ricerca necessario viene stimato in funzione delle sequenze di caratteri trovate.",
+      "text1-5": "I dettagli sul processo di valutazione sono disponibili a questo ",
+	  "text1-6": ".",
+      "subtitle2": "Cosa non fa",
+      "text2-1": "I rischi legati a ricerche mirate non possono essere coperti da un test generico della password. La verifica della password avviene sulla base dei dizionari generali, che comprendono vocaboli comuni nelle diverse lingue. Un hacker che prende di mira una vittima specifica può tenere conto delle informazioni che ha su di essa come la data di nascita, il nome, i dati relativi all’indirizzo o al nucleo familiare, i nomi dei bambini o degli animali domestici ecc.",
+      "text2-2": "Allo stesso modo, il test della password non può tenere conto del rischio che la password venga scoperta in altri modi, ad esempio come conseguenza del fatto che l’utente la salva sul computer senza protezione o attraverso lo spionaggio con malware.",
+      "text2-3": "",
+      "text2-4": ""
+    },
+    "newMethods":{
+      "text1": "Nel test della password dell’incaricato della protezione dei dati del Cantone di Zurigo sono state implementate le seguenti particolarità:",
+      "text2": "Tutti i testi avvengono localmente nel browser dell’utente. Nessuna password è inviata al server.",
+      "text3": "La verifica avviene in tempo reale. L’utente può rendersi conto di come cambia la valutazione della password a ogni carattere digitato.",
+      "text4": "Sono disponibili dizionari in tedesco svizzero standard, italiano, francese, romancio e inglese, che possono essere selezionati dall’utente.",
+      "text5": "Sono riconosciute anche le modifiche di parole più comuni (<a href=\"https://it.wikipedia.org/wiki/Leet\" target=\"_blank\">leeten / l33t</a>).",
+      "text6": "Sono riconosciute le sequenze di tastiera in base alla tastiera svizzera.",
+      "text7": "Il codice sorgente e il metodo applicato sono accessibili pubblicamente (<a href=\"https://www.github.com/cnlab-software-ag/passwortcheck.git\" target=\"_blank\">Github Repository</a>)."
+    }
+  },
+  "imprintSite": {
+    "contact": "Contatto",
+    "phone": "Telefono",
+    "email": "E-Mail",
+    "website": "Sito web",
+    "socialMedia": "Social media",
+    "twitterChannel": "Canale Twitter da DSB",
+    "youtubeChannel": "canale Youtube da DSB",
+    "dsbApp": "Datenschutz App",
+    "androidVersion": "versione Android",
+    "iosVersion": "Versione iOS",
+    "developer": "Sviluppatore",
+    "sourceCode": "Codice sorgente",
+    "sourceCodeText": "Il codice sorgente e il metodo applicato sono aperti e accessibili sotto <a href=\"https://opensource.org/licenses/bsd-license.php\" target=\"_blank\">BSD-2-Clause</a> a tutti <a href=\"https://www.github.com/cnlab-software-ag/passwortcheck.git\" target=\"_blank\">GIT-Hub</a>.",
+    "privacyStatement": "Carta di riservatezza",
+    "privacyStatementText": "Durante l'accesso al test della password di protezione dei dati del Cantone di Zurigo, l'indirizzo IP viene temporaneamente utilizzato per aggiornare le statistiche. Successivamente, l'indirizzo IP viene cancellato.",
+    "version": ""
+  }
+}

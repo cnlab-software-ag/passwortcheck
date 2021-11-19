@@ -1,0 +1,240 @@
+{
+  "passwordCheck": "Password Check",
+  "passwordHints": "Password Tips",
+  "systemProcess": "System set-up",
+  "statistics": "Statistics",
+  "imprint": "Imprint",
+  "strong": "strong",
+  "weak": "weak",
+  "password": "password",
+  "or": "or",
+  "and": "and",
+
+  "passwordSite": {
+    "passwordLabel": "Password to be verified",
+    "showPassword": "Show password",
+    "passwordWillNotBeSent": "The entered password will be verified locally and never transmitted to the server.",
+    "thePasswordIs": "The password is",
+    "belowOneYear": " because the estimated search time is less than one year.",
+    "overOneYear": " because the estimated search time is more than one year.",
+    "selectedWordBooks": "Chosen dictionaries",
+    "stepsToDo": "More tips and protective measures",
+    "hintPasswordHint": "Use a unique password for each service and where possible, enable 2-factor authentication (see also ",
+    "hintMalware": "Apply ",
+    "hintHaveIBeenPawned": "Verify if the password is already listed in one or several password lists using <a href=\"https://www.checktool.ch\" target=\"_blank\">MELANI Checktool</a> or <a href=\"https://haveibeenpwned.com/passwords\" target=\"_blank\">Have i been pwned</a>."
+  },
+
+  "wordBook": {
+    "names": {
+      "datum": "Date",
+      "sequence": "Sequence",
+      "keyboard": "Keyboard",
+      "nameList": "List of names",
+      "german": "German",
+      "french": "French",
+      "italian": "Italian",
+      "rhaetoRomansch": "Rhaeto-Romanic",
+      "english": "English"
+    },
+    "source": {
+      "datum": "Date",
+      "sequence": "Sequence",
+      "keyboard": "Keyboard",
+      "nameList": "Name list",
+      "passwordList": "List of passwords",
+      "german": "Word (German)",
+      "french": "Word (French)",
+      "italian": "Word (Italian)",
+      "rhaetoRomansch": "Word (Rhaeto-Romanic)",
+      "english": "Word (English)",
+      "other": "Other characters"
+    },
+    "notSelectedWarning": "The English dictionary is not selected."
+  },
+  "yearTable": {
+    "partialWords": "Substrings",
+    "length": "Length",
+    "type": "Type",
+    "roomSize": "Size",
+    "numberOfAttempts": "Number of attempts",
+    "entropy": "Entropy",
+    "computeTime": "Computation time",
+    "tooltip": {
+      "roomSize": "Number of symbols or words in the dictionary, according to type.",
+      "numberOfAttempts": "Number of possible combinations for this substring.",
+      "entropy": "Entropy is a measure of randomness in a text. The higher the entropy the more attempts are required to guess the text.",
+      "computeTime": "The computation time assumes that any attacker can make billions of attempts per second. This corresponds to a current and high-performance PC with specialised software and hardware.",
+      "wordBrackets": "Within the brackets you will find the substring which is normalized and can be found in the dictionary."
+    },
+    "costEstimated": "Time and effort estimation"
+  },
+  "timeAsText": {
+    "lessTenASecond": "Less than one second",
+    "seconds": "{{value}} seconds",
+    "minutes": "{{value}} minutes",
+    "hours": "{{value}} hours",
+    "days": "{{value}} days",
+    "months": "{{value}} months",
+    "years": "{{value}} years",
+    "severalMillionYears": "Several million years"
+  },
+  "passwordHintsSite": {
+    "header": {
+      "passwordHints": "Password Tips",
+      "passwordSave": "Safeguarding Passwords",
+      "passwordAbuse": "Password Misuse",
+      "protections": "Protection Measures"
+    },
+    "buildingStrongPasswords": {
+      "text1": "A strong password consists of a large and random number of upper and lower case letters, numbers and symbols. How can you remember such a password without writing it down? There are several ways. We will now look more closely at «Password Mnemonics», or memorable phrases.",
+      "text2": "«Password Mnemonics» entails using a whole sentence as a password, or one that stems from the mnemonic of the password.",
+      "text3": "Example of a mnemonic: <i>(please do not use)</i><br>«I always drink my coffee at 5 minutes after 9’»",
+      "text5": "If an application does not accept longer passwords, then as the following example shows, the first letter of each word in the mnemonic sentence can be used to create the password.",
+      "text6": "Example mnemonic:<br>«<u>I</u> <u>a</u>lways <u>d</u>rink <u>m</u>y <u>c</u>offee <u>a</u>t <u>5</u> <u>m</u>inutes <u>a</u>fter <u>9</u><u>’</u>»",
+      "text7": "Example password: <i>(please do not use)</i><br>Iadmca5ma9’",
+      "text8": "The system can be tailored to the individual and changed at any time. The possibilities are limitless. As an example, upper and lower case letters can be interchanged. What is important is that the system is simple and easy to replicate.",
+      "text9": "If the application is supported by two-factor authentication, then this additional protection should be activated.",
+      "subtitle": "Password pitfalls that should be avoided",
+      "text10": "Avoid using phrases or numbers that are easy to guess. This includes, for example, simple words, names and dates of birth or birth years. Avoid substituting letters with numbers or symbols – for example, substituting A with a 4 - referred to in computing jargon as «<a href=\"https://en.wikipedia.org/wiki/Leet\" target=\"_blank\">leet</a>» or «leetspeak».",
+	  "text11": "A separate password should be used for each service."
+    },
+    "secureStoringPasswords": {
+      "text1-1": "Never write down a password. What sounds obvious is not always easy to implement, especially when each different service and website requires a different password (see: ",
+      "text1-2": "). Few of us are able to remember all our passwords. Help can be provided in the form of a password manager.",
+      "text2": "A password manager programme makes the creation, administration and use of secure passwords much easier. Using a password manager programme, you only need to remember the main password for password manager programme and the passwords for more sensitive services such as on-line banking. Further information on a Password Manager can be found on the <a href=\"https://dsb.zh.ch/internet/datenschutzbeauftragter/de/publikationen/anleitungen/_jcr_content/contentPar/form_0/formitems/passwortmanager/download.spooler.download.1485878383609.pdf/Merkblatt_Vergleich_Passwortmanager.pdf\" target=\"_blank\">Password Manager Information Sheet</a> (in German).",
+      "text3": "The basic rules for safeguarding passwords:",
+      "text4": "A password manager programme makes it easier to create and use secure passwords.",
+      "text5": "Always remember, but never write down the most important passwords or passwords for sensitive services such as on-line banking.",
+      "text6": "Never write down passwords, for example never write it on a Post-It note beneath the keyboard."
+    },
+    "passwordAbuse": {
+      "text1": "Unauthorised persons could access a password by varying means. One method is to guess the password:",
+      "text2": "Many users employ passwords that are easy to remember, such as personal details. This makes it much easier and often quicker to guess the password and to gain access to a computer system (Passwords Guessing).",
+      "text3": "Simple or short passwords can be cracked through systematic trial-and-error attempts (Brute Force Attack). The success rate of such methods can be reduced by using strong passwords.",
+      "text3-1": "Tips for creating and safeguarding passwords can be found under ",
+      "text3-2": ".",
+      "text4": "Passwords can be also recorded in different ways. The most commonplace methods are:",
+      "text5": "Through phishing (a link via email) a person is misled to a fake website that resembles the real one. A request is then made to input your username and password. Enter these details and the attacker will have your password data.",
+      "text6": "Keylogger (specialised malware) is used to record the computer user’s details, thereby being able to observe or reconstruct the details of the computer user. Keylogger is also used by unauthorised persons to find out passwords.",
+      "text7": "If the transmission of passwords is unencrypted, then it is easier for an unauthorised person to find out the password. This occurs, for example, during an unencrypted web access, recognisable through the abbreviation «http» in the browser address field. Encrypted connections, such as web access via TLS/SSL reduces this risk greatly. An encrypted connection is shown as the abbreviation «<b>https</b>» in the in the browser address field.",
+      "text8": "Simple password protective measures can be found under "
+    },
+    "protections": {
+      "text1": "It is essential to protect the devices on which the passwords are used.",
+      "text2": "The following five measures all help to improve data and password protection of any device:",
+      "text3": "Protect personal information",
+      "text4": "Defend attacks (firewall, install patches, malware protection)",
+      "text5": "Prevent unauthorised access",
+      "text6": "Encrypt sensitive information",
+      "text7": "Back-up / delete information",
+      "text8": "",
+      "text9": "More detailed information of the topics of smartphone and PC protection and Internet awareness can be found on the following websites:",
+      "text10": "Data Protection Administration for the Canton of Zurich (in German):",
+      "text10.1": "<a href=\"https://dsb.zh.ch/internet/datenschutzbeauftragter/de/mein-datenschutz/digitaler-selbstschutz.html\" target=\"_blank\">Digital Self-Protection</a>",
+      "text10.2": "<a href=\"https://dsb.zh.ch/internet/datenschutzbeauftragter/de/publikationen/anleitungen/_jcr_content/contentPar/form/formitems/pc_sicherheit/download.spooler.download.1520842016466.pdf/Checkliste_PC-Sicherheit.pdf\" target=\"_blank\">PC-Security</a>",
+      "text10.3": "<a href=\"https://dsb.zh.ch/internet/datenschutzbeauftragter/de/publikationen/anleitungen/_jcr_content/contentPar/form/formitems/smartphone_sicherhei/download.spooler.download.1509975972026.pdf/Checkliste_Smartphone-Sicherheit.pdf\" target=\"_blank\">Smartphone Security</a>",
+      "text11": "BSI for citizens (in German): <a href=\"https://www.bsi-fuer-buerger.de\" target=\"_blank\">https://www.bsi-fuer-buerger.de</a>",
+      "text12": "iBarry by Swiss Internet Security Alliance: <a href=\"https://ibarry.ch/en/\" target=\"_blank\">https://ibarry.ch/en/</a>",
+      "text13": "eBanking but secure!: <a href=\"https://ebankingabersicher.ch/en/\" target=\"_blank\">https://ebankingabersicher.ch/en/</a>"
+    }
+  },
+  "systemProcesses": {
+    "header": {
+      "systemSetup": "System Set-up",
+      "checkSequence": "Checking Process",
+      "crackingPasswords": "Cracking Passwords",
+      "whatDoesThisApp": "What does Password Check do?",
+      "newMethods": "New Methods"
+    },
+    "systemSetup": {
+      "text1": "Password Check system consists of a webserver, Password Check application and a database.",
+      "subtitle1": "Webserver",
+      "text1-1": "The webserver is the interface with the user. It provides Password Check, administers the statistics in a database and hosts the website.",
+      "subtitle2": "Password Check application",
+      "text2-1-1": "Password Check is the core application that assesses the strength of an inputted password. Password Check is implemented in <a href=\"https://en.wikipedia.org/wiki/JavaScript\" target=\"_blank\">JavaScript</a>. JavaScript programmes are executed by the browser on the user’s computer. This means that no passwords or other private user data is sent to the server. All computations take place on the user’s computer. When the browser is closed the data is deleted. To obtain a statistic on the frequency of strong and weak passwords, the JavaScript program sends the results to the server. The only information that is transmitted is whether the result is ",
+      "text2-1-2": ".",
+      "text2-2-1": "Password checking is described in ",
+      "text2-2-2": ".",
+      "text2-3": "",
+      "text2-4": "",
+      "text2-5": "",
+      "text2-6": "",
+      "text2-7": "",
+      "text2-8": "",
+      "text2-9": "",
+      "subtitle3": "Database",
+      "text3-1-1": "The database collects information on the quality of the verified password (",
+      "text3-1-2": ") for statistics.",
+      "text3-2": "<b>Solely the results of the check are stored. Passwords are never transmitted to the server.</b>"
+    },
+    "checkSequence": {
+      "text0-1": "Password Check process assesses the strength of a password, based on the probability of the number of attempts required by an attacker to figure it out. First and foremost, this depends on the length of the password and the number of characters used in the set.",
+      "text0-2": "If a password contains known words, number sequences or keyboards patterns, these can be useful to an attacker. Instead of trying out long and random strings, the attacker will first attempt combinations of dictionary words, year numerals, keyboard patterns and so forth. This greatly reduces the number of required attempts.",
+      "text0-3": "Password Check will look for the following elements:",
+      "text0-4": "words from German, French, Italian, Romansch and English dictionaries (as selected by the user)",
+      "text0-5": "Swiss keyboard patterns (for example, «qwertz»)",
+      "text0-6": "sequential numbers and alphabetical sequences (for example «1234», «abcd»)",
+      "text0-7": "dates (for example, «03.06.2019»)",
+      "text0-8": "By searching in the dictionary, amended upper and lower case letters and <a href=\"https://en.wikipedia.org/wiki/leet\" target=\"_blank\">l33t</a>-letters can be recognised. For example, c@t, hOUse and b3d are found as words.",
+      "text0-9": "",
+      "subtitle1": "",
+      "text1-1": "Password Check calculates the theoretical number of combination attempts that are needed to find out a password. First of all, the aforementioned dictionary words and patterns are searched for inx1 the password and then the password is broken down into its component parts.",
+      "text1-2": "A calculation is made for each substring of how many attempts an attacker would need:",
+      "text1-3": "By using words from the activated dictionaries, the number of possibilities is equal to the size of the dictionary. Based on recognition of upper and lower case letters as well as l33t, the size of the actual dictionary increases by a factor of 10.",
+      "text1-4": "Keyboard patterns, sequential numbers and alphabetical results: the number of possible combinations.",
+      "text1-5": "For any other characters that are not part of a word or pattern, <i>k</i><sup><i>n</i></sup> represents the number of possibilities, whereby <i>k</i> is the number of possible characters and <i>n</i> is the length.",
+      "text1-6": "To estimate the effort in time, it is assumed that an attacker can make a billion attempts per second. This corresponds to the processing power of high-performance PCs with specialised soft- and hardware. ",
+      "text1-7-1": "A password has to withstand an attack with a computing time of ",
+      "text1-7-2": "more than a year",
+      "text1-7-3": " to be judged to be ",
+      "text1-7-4": ".",
+      "img": "./assets/system_process.png",
+      "img-alt": "Picture 1: Example of effort estimation"
+    },
+    "crackingPasswords": {
+      "text1": "The simplest method of cracking a password is to try out all possibilities in sequence. This method is very laborious, as number of attempts needed increases exponentially with the length of the password.",
+      "text2": "As most people do not select their passwords at random, ambitious tools try to crack the passwords by using specialised password dictionaries. Moreover, as well as the usual words found in any dictionary, password dictionaries also contain useful character sequences such as keyboard patterns, or sequential numbers such as 12345. These may include letters that are often substituted by other characters, for example E by 3 or A by @ - which is also known as <a href=\"https://en.wikipedia.org/wiki/Leet\" target=\"_blank\">leet / leetspeak</a>. The use of password dictionaries and inclusion of leet considerably lessens the number of attack attempts needed.",
+      "text3": "On-line and off-line attacks proceed differently. If, for example, an authorised person has access to a laptop, then this person can make a copy of the hard drive and then try out billions of potential passwords on their own computer. Password Check assumes that the attacker is able to make a billion attempts per second.",
+      "text5": "Even on-line services can be victims of an off-line attack. If someone is able to make a copy of the password database, then they are able to make a good number of attempts per second using their own computer.",
+      "text6": "The theft of password databases is also problematic for another reason: these databases often contain other user data, such as names and email addresses. Since many users employ the same password for several services, attackers try to log in to other services using stolen email and password data."
+    },
+    "whatDoesThisApp": {
+      "subtitle1": "What it does",
+      "text1-1": "Password Check checks the password against commonplace character sequences that any attacker might expect, thereby simplifying things greatly for the attacker. This includes dictionary words, keyboard patterns, sequential numbers etc.",
+      "text1-2": "An assessment of the search effort is undertaken, based on the character sequences that have been found.",
+      "text1-5": "Details of the evaluation process can be found in ",
+      "subtitle2": "What Password Check does not do",
+      "text2-1": "The risks of targeted searches cannot be covered by a generic Password Check. Password Check works in tandem with general dictionaries. These include frequent names in various languages. An attacker with a specific victim in sight is able to draw on knowledge about that person: date of birth, surname, address, family information, names of children of pets etc.",
+      "text2-2": "Password Check cannot take into account the risk that a password is known by other means, such as through insecure storage of the password on the PC, or through malware.",
+      "text2-3": "",
+      "text2-4": ""
+    },
+    "newMethods":{
+      "text1": "The following specific measures are implemented for Password Check of the Data Protection Officers of the Canton of Zurich:",
+      "text2": "All checks are performed in the browser of the user. No passwords are transmitted or held on a server.",
+      "text3": "Checking is done in real time. While entering the password the user is able to see how the password assessment changes with each additional character.",
+      "text4": "Dictionaries are available for Swiss Standard German, Italian, French, Romansch and English, which can be selected by the user.",
+      "text5": "Word search recognises known modifications (<a href=\"https://de.wikipedia.org/wiki/Leet\" target=\"_blank\">leet / leetspeak</a>).",
+      "text6": "Keyboard patterns are based on the Swiss keyboard.",
+      "text7": "The source code and the administration process are publicly accessible (<a href=\"https://www.github.com/cnlab-software-ag/passwortcheck.git\" target=\"_blank\">Github Repository</a>)."
+    }
+  },
+  "imprintSite": {
+    "contact": "Contact",
+    "phone": "Telephone",
+    "email": "E-Mail",
+    "website": "Website",
+    "socialMedia": "Social media",
+    "twitterChannel": "DSB Twitter channel",
+    "youtubeChannel": "DSB Youtube channel",
+    "dsbApp": "Datenschutz App",
+    "androidVersion": "Android-version",
+    "iosVersion": "iOS-version",
+    "developer": "Developer",
+    "sourceCode": "Source Code",
+    "sourceCodeText": "The source code is available under the <a href=\"https://opensource.org/licenses/bsd-license.php\" target=\"_blank\">BSD-2-Clause</a> and can be accessed on <a href=\"https://www.github.com/cnlab-software-ag/passwortcheck.git\" target=\"_blank\">GIT-Hub</a>.",
+    "privacyStatement": "Data Protection Notice",
+    "privacyStatementText": "When accessing Password Check of the Data Protection Officer of the Canton of Zurich an IP address is used to refresh the statistic. Afterwards, the IP address is deleted.",
+    "version": "Version"
+  }
+}
