@@ -1,6 +1,6 @@
 {
   "passwordCheck": "Password Check",
-  "passwordHints": "Password Tips",
+  "passwordHints": "Password Hints",
   "systemProcess": "System set-up",
   "statistics": "Statistics",
   "imprint": "Imprint",
@@ -18,7 +18,7 @@
     "belowOneYear": " because the estimated search time is less than one year.",
     "overOneYear": " because the estimated search time is more than one year.",
     "selectedWordBooks": "Chosen dictionaries",
-    "stepsToDo": "More tips and protective measures",
+    "stepsToDo": "More hints and protective measures",
     "hintPasswordHint": "Use a unique password for each service and where possible, enable 2-factor authentication (see also ",
     "hintMalware": "Apply ",
     "hintHaveIBeenPawned": "Verify if the password is already listed in one or several password lists using <a href=\"https://www.checktool.ch\" target=\"_blank\">MELANI Checktool</a> or <a href=\"https://haveibeenpwned.com/passwords\" target=\"_blank\">Have i been pwned</a>."
@@ -80,7 +80,7 @@
   },
   "passwordHintsSite": {
     "header": {
-      "passwordHints": "Password Tips",
+      "passwordHints": "Password Hints",
       "passwordSave": "Safeguarding Passwords",
       "passwordAbuse": "Password Misuse",
       "protections": "Protection Measures"
@@ -111,7 +111,7 @@
       "text1": "Unauthorised persons could access a password by varying means. One method is to guess the password:",
       "text2": "Many users employ passwords that are easy to remember, such as personal details. This makes it much easier and often quicker to guess the password and to gain access to a computer system (Passwords Guessing).",
       "text3": "Simple or short passwords can be cracked through systematic trial-and-error attempts (Brute Force Attack). The success rate of such methods can be reduced by using strong passwords.",
-      "text3-1": "Tips for creating and safeguarding passwords can be found under ",
+      "text3-1": "Hints for creating and safeguarding passwords can be found under ",
       "text3-2": ".",
       "text4": "Passwords can be also recorded in different ways. The most commonplace methods are:",
       "text5": "Through phishing (a link via email) a person is misled to a fake website that resembles the real one. A request is then made to input your username and password. Enter these details and the attacker will have your password data.",
