@@ -9,6 +9,7 @@ import {RemainingChars} from './remainingChars.model';
 import {Wordbook} from './wordbook.model';
 import {PasswordPartial} from './passwordPartial.model';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
+import {environment} from "../../environments/environment";
 
 @Injectable()
 export class PasswordcheckService {
@@ -150,7 +151,7 @@ export class PasswordcheckService {
     window.clearTimeout(this.timer);
     const body: string = 'result=' + (state ? '1' : '0');
     const headers = new HttpHeaders({'Content-Type': 'application/x-www-form-urlencoded'});
-    this.http.post('resultimport.php', body, { headers: headers }).subscribe(
+    this.http.post(environment.apiUrl + 'result/index.php', body, { headers: headers }).subscribe(
       () => {},
       () => {}
     );
