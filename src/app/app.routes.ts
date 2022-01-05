@@ -22,4 +22,4 @@ const APP_ROUTES: Routes = [
   { path: 'noheader', component: PasswordcheckComponent }
 ];
 
-export const routing = RouterModule.forRoot(APP_ROUTES);
+export const routing = RouterModule.forRoot(APP_ROUTES, { relativeLinkResolution: 'legacy' });
