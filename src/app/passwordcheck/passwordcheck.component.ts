@@ -23,10 +23,6 @@ import {ActivatedRoute} from '@angular/router';
     .wordbook {
         word-wrap: break-word;
     }
-    .wordbook-warning {
-      margin-left: 5px;
-      font-weight: bold;
-    }
   `]
 })
 
@@ -51,10 +47,10 @@ export class PasswordcheckComponent implements OnInit, AfterViewInit, OnDestroy 
   ngOnInit() {
     this.availableWordbooks = this.wordbookService.getAvailableWordbooks();
     this.displayedWordbooks = this.wordbookService.getDisplayedWordbooks();
-    this.isNoHeader = this.route.snapshot.url[0].path.includes('noheader');
     this.route.queryParams.subscribe(param => {
-      this.selectedLang = param['lang'].toString();
-      this.translate.use(this.selectedLang);
+      if (Object.keys(param)) {
+        this.translate.use(param['lang'].toString());
+      }
     })
   }
 
