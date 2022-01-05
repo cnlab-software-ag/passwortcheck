@@ -19,21 +19,7 @@ import {ActivatedRoute} from '@angular/router';
     input[type=text]::-ms-reveal{ display: none; width: 0; height: 0}
     input[type=password]::-ms-clear{ display: none; width: 0; height: 0}
     input[type=password]::-ms-reveal{ display: none; width: 0; height: 0}
-
-    .overlay {
-        background: #ffffff;
-        color: #666666;
-        opacity: 0.5;
-        position: fixed;
-        height: 100%;
-        width: 100%;
-        z-index: 5000;
-        top: 0;
-        left: 0;
-        float: left;
-        text-align: center;
-        padding-top: 25%;
-    }
+    
     .wordbook {
         word-wrap: break-word;
     }
@@ -66,6 +52,10 @@ export class PasswordcheckComponent implements OnInit, AfterViewInit, OnDestroy 
     this.availableWordbooks = this.wordbookService.getAvailableWordbooks();
     this.displayedWordbooks = this.wordbookService.getDisplayedWordbooks();
     this.isNoHeader = this.route.snapshot.url[0].path.includes('noheader');
+    this.route.queryParams.subscribe(param => {
+      this.selectedLang = param['lang'].toString();
+      this.translate.use(this.selectedLang);
+    })
   }
 
   ngAfterViewInit() {
