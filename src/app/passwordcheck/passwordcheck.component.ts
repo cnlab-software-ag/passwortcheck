@@ -48,7 +48,7 @@ export class PasswordcheckComponent implements OnInit, AfterViewInit, OnDestroy 
     this.availableWordbooks = this.wordbookService.getAvailableWordbooks();
     this.displayedWordbooks = this.wordbookService.getDisplayedWordbooks();
     this.route.queryParams.subscribe(param => {
-      if (Object.keys(param)) {
+      if (Object.keys(param).length > 0) {
         this.translate.use(param['lang'].toString());
       }
     })
