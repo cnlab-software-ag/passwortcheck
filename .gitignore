@@ -1,3 +1,5 @@
 /.angular/cache
 /src/assets/icons_dsb/
 !/passwortcheck.iml
+/node_modules/
+/dist/
