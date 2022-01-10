@@ -2,7 +2,7 @@
 
 Die Passwortcheck-Anwendung wird in zwei "Flavors" angeboten.
 
-- Im Branch `master` findet sich die umfassende Variante mit Beschreibungen, Tipps und Hintergrund-Informationen zum Thema "Passwörter".
+- Im Branch `main` findet sich die umfassende Variante mit Beschreibungen, Tipps und Hintergrund-Informationen zum Thema "Passwörter".
 - Im Branch `iframe` findet sich eine reduzierte Version. Sie enthält lediglich den Passwortcheck selbst und ist für die Integration in einem iframe ausgelegt.
 
 
@@ -12,7 +12,7 @@ Die Icons wurden aus Copyright Gründen ausgetauscht.
 ## Backend-API
 - Die Resultate des Passwortchecks (lediglich "stark" oder "schwach") werden an einen definierten Backend-URL übermittelt. 
 - Die Informationen werden für die Erzeugung der Statistik verwendet.
-- Details zu den Backend-Funktionen (Anforderungen, Endpunkte, DB-Schema) sind in einem separaten git-Projekt zu finden.
+- Details zu den Backend-Funktionen (Anforderungen, Endpunkte, DB-Schema) sind in einem separaten [git-Projekt](https://github.com/cnlab-software-ag/passwortcheck-backend) zu finden.
 - Die URL für das Backend-API muss vor dem Bauen der Anwendung in der Datei `environment.ts` bzw. `environment.prod.ts` angepasst werden.
 
 ## Neue Sprache hinzufügen
