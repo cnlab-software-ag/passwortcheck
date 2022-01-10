@@ -1,6 +1,6 @@
 # Passwortcheck
 
-Die Passwortcheck-Anwendung sind in zwei "Flavors" angeboten.
+Die Passwortcheck-Anwendung wird in zwei "Flavors" angeboten.
 
 - Im Branch `master` findet sich die umfassende Variante mit Beschreibungen, Tipps und Hintergrund-Informationen zum Thema "Passwörter".
 - Im Branch `iframe` findet sich eine reduzierte Version. Sie enthält lediglich den Passwortcheck selbst und ist für die Integration in einem iframe ausgelegt.
