@@ -3,6 +3,7 @@
   "passwordHints": "Conseils sur le mot de passe",
   "systemProcess": "Séquence de système",
   "statistics": "Statistique",
+  "timeseries": "Série chronologique",
   "imprint": "Mentions légales",
   "strong": "fort",
   "weak": "faible",
@@ -138,6 +139,15 @@
       "text12": "iBarry par Swiss Internet Security Alliance: <a href=\"https://ibarry.ch/fr/\" target=\"_blank\">https://ibarry.ch/fr/</a>",
       "text13": "eBanking en toute sécurité!: <a href=\"https://ebankingabersicher.ch/fr/\" target=\"_blank\">https://ebankingabersicher.ch/fr/</a>"
     }
+  },
+  "stats": {
+    "executedChecks": "Tests effectués",
+    "last1d": "Dernières 24 heures",
+    "last7d": "La semaine dernière",
+    "last30d": "Le mois dernier",
+    "last365d": "L'année dernière",
+    "absoluteNumbers": "Nombre absolu",
+    "relativePercentage": "Part relative"
   },
   "systemProcesses": {
     "header": {

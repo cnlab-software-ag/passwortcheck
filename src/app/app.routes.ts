@@ -9,6 +9,7 @@ import {StatisticsComponent} from './statistics/statistics.component';
 import {SYSTEM_PROCESSES_ROUTES} from './system-processes/system-processes.routes';
 import {PASSWORD_HINTS_ROUTES} from './password-hints/password-hints.routes';
 import {ImpressumComponent} from './impressum/impressum.component';
+import {TimeseriesComponent} from "./timeseries/timeseries.component";
 
 const APP_ROUTES: Routes = [
   { path: '', component: NavigationComponent, children: [
@@ -17,6 +18,7 @@ const APP_ROUTES: Routes = [
     { path: 'passworttipps', component: PasswordHintsComponent, children: PASSWORD_HINTS_ROUTES },
     { path: 'systemablauf', component: SystemProcessesComponent, children: SYSTEM_PROCESSES_ROUTES },
     { path: 'statistik', component: StatisticsComponent },
+    { path: 'timeseries', component: TimeseriesComponent },
     { path: 'impressum', component: ImpressumComponent }
     ]},
   { path: 'noheader', component: PasswordcheckComponent }

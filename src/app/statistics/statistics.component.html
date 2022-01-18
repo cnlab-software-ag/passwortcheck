@@ -1,18 +1,21 @@
 <div class="row">
-  <div class="col-6">
-    <img src="stat_day.php" alt="day statistics"
-         class="img-responsive" align="middle" width="60%">
+  <div class="col-12">
+    <h3>{{'stats.executedChecks' | translate}}</h3>
   </div>
   <div class="col-6">
-    <img src="stat_week.php" alt="week statistics"
-         class="img-responsive" align="middle" width="60%">
+    <h4>{{'stats.last1d' | translate}}</h4>
+    <canvas baseChart type="pie" [labels]="labels" [data]="data1d"></canvas>
   </div>
   <div class="col-6">
-    <img src="stat_month.php" alt="month statistics"
-         class="img-responsive" align="middle" width="60%">
+    <h4>{{'stats.last7d' | translate}}</h4>
+    <canvas baseChart type="pie" [labels]="labels" [data]="data7d"></canvas>
   </div>
   <div class="col-6">
-    <img src="stat_year.php" alt="year statistics"
-         class="img-responsive" align="middle" width="60%">
+    <h4>{{'stats.last30d' | translate}}</h4>
+    <canvas baseChart type="pie" [labels]="labels" [data]="data30d"></canvas>
+  </div>
+  <div class="col-6">
+    <h4>{{'stats.last365d' | translate}}</h4>
+    <canvas baseChart type="pie" [labels]="labels" [data]="data365d"></canvas>
   </div>
 </div>

@@ -40,6 +40,16 @@
         <div class="sidebar-text">{{'statistics' | translate}}</div>
       </div>
     </div>
+    <div class="col-2 col-md-12 sidebar-button-middle">
+      <div class="sidebar-button sidebar-button-amber"
+           [routerLink]="'/timeseries'"
+           [routerLinkActive]="'active'">
+        <div class="text-center">
+          <img src="../../assets/statistics.png" class="img-fluid sidebar-icon">
+        </div>
+        <div class="sidebar-text">{{'timeseries' | translate}}</div>
+      </div>
+    </div>
     <div class="col-2 col-md-12 sidebar-button-right">
       <div class="sidebar-button sidebar-button-grey"
            [routerLink]="'/impressum'"
@@ -91,6 +101,16 @@
           <img src="../../assets/statistics.png" class="img-fluid sidebar-icon">
         </div>
         <div class="sidebar-text">{{'statistics' | translate}}</div>
+      </div>
+    </div>
+    <div class="sidebar-button">
+      <div class="sidebar-button-amber sidebar-button-middle"
+           [routerLink]="'/timeseries'"
+           [routerLinkActive]="'active'">
+        <div class="text-center">
+          <img src="../../assets/statistics.png" class="img-fluid sidebar-icon">
+        </div>
+        <div class="sidebar-text">{{'timeseries' | translate}}</div>
       </div>
     </div>
     <div class="sidebar-button">

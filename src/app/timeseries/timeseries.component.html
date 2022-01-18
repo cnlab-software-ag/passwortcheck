@@ -1,0 +1,22 @@
+<div class="row">
+  <div class="col-12">
+    <h3>{{'stats.executedChecks' | translate}}</h3>
+  </div>
+  <div class="col-12">
+    <h4>{{'stats.last30d' | translate}}</h4>
+    <canvas baseChart type="line" [data]="data30dAbs"></canvas>
+  </div>
+  <div class="col-12"><p></p></div>
+  <div class="col-12">
+    <canvas baseChart type="line" [data]="data30dRel"></canvas>
+  </div>
+  <div class="col-12"><p><br></p></div>
+  <div class="col-12">
+    <h4>{{'stats.last365d' | translate}}</h4>
+    <canvas baseChart type="line" [data]="data365dAbs"></canvas>
+  </div>
+  <div class="col-12">
+    <canvas baseChart type="line" [data]="data365dRel"></canvas>
+  </div>
+
+</div>
