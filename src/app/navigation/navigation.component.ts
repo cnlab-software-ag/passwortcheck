@@ -5,8 +5,8 @@ import { Component } from '@angular/core';
   templateUrl: './navigation.component.html',
   styles: [`
     div {
-        padding: 0px;
-        margin: 0px;
+        padding: 0;
+        margin: 0;
     }
     .passwordCheckContainer {
         padding-top: 10px;
