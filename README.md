@@ -24,4 +24,5 @@ Folgende Schritte sind nötig, um eine neue Sprache hinzufügen zu können.
 Die Applikation muss neu kompiliert und deployed werden. Bei Änderungen an den Sprachdateien ist keine Kompilierung nötig. 
 
 ## Bauen der Anwendung
-Die Anwendung kann, wie für Angular üblich, mit `ng build --prod` gebaut werden, die Ausgabe erfolgt in den Ordner `dist`.
+- Während der Entwicklung kann die Anwendung mit `ng serve` gestartet werden. Es wird die Konfiguration aus `environment.ts` verwendet.
+- Zum Entwickeln Die Anwendung kann, wie für Angular üblich, mit `ng build --confiuration production` gebaut werden. Dabei wird die Konfiguration aus `environment.prod.ts` verwendet, die Ausgabe erfolgt in den Ordner `dist`.

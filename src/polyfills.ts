@@ -18,10 +18,10 @@
 * BROWSER POLYFILLS
 */
 
-import 'core-js/es7/array';
+import 'core-js/es/array';
 
 /** IE10 and IE11 requires the following for the Reflect API. */
-import 'core-js/es6/reflect';
+import 'core-js/es/reflect';
 
 
 /** Evergreen browsers require these. **/
