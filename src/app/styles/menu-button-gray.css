@@ -3,8 +3,8 @@
     height: 60px;
     text-align: center;
     color: white;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     cursor: pointer;
     word-wrap: break-word;
 }
@@ -37,7 +37,7 @@
 }
 
 .first {
-    margin-left: 0px;
+    margin-left: 0;
     margin-right: 3px;
 }
 .middle {
@@ -46,7 +46,7 @@
 }
 .last {
     margin-left: 3px;
-    margin-right: 0px;
+    margin-right: 0;
 }
 .active {
     color: #2B6B8F;
