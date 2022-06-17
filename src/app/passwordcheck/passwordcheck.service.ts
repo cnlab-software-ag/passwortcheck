@@ -9,7 +9,7 @@ import {RemainingChars} from './remainingChars.model';
 import {Wordbook} from './wordbook.model';
 import {PasswordPartial} from './passwordPartial.model';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
-import {environment} from '../../environments/environment';
+import {environment} from "../../environments/environment";
 
 @Injectable()
 export class PasswordcheckService {
