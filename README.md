@@ -25,4 +25,4 @@ Die Applikation muss neu kompiliert und deployed werden. Bei Änderungen an den 
 
 ## Bauen der Anwendung
 - Während der Entwicklung kann die Anwendung mit `ng serve` gestartet und auf dem lokalen Development-Server getestet werden. Es wird die Konfiguration aus `environment.ts` verwendet.
-- Zum Releasen kann die Anwendung mit `ng build --confiuration production` gebaut werden. Dabei wird die Konfiguration aus `environment.prod.ts` verwendet, die Ausgabe erfolgt in den Ordner `dist`.
+- Zum Releasen kann die Anwendung mit `ng build --configuration production` gebaut werden. Dabei wird die Konfiguration aus `environment.prod.ts` verwendet, die Ausgabe erfolgt in den Ordner `dist`.
