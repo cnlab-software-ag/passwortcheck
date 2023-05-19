@@ -35,7 +35,9 @@
       "french": "French",
       "italian": "Italian",
       "rhaetoRomansch": "Rhaeto-Romanic",
-      "english": "English"
+      "english": "English",
+      "ort": "Location",
+      "postleitzahl": "Postcode"
     },
     "source": {
       "datum": "Date",
@@ -48,7 +50,9 @@
       "italian": "Word (Italian)",
       "rhaetoRomansch": "Word (Rhaeto-Romanic)",
       "english": "Word (English)",
-      "other": "Other characters"
+      "other": "Other characters",
+      "ort": "Location",
+      "postleitzahl": "Postcode"
     },
     "notSelectedWarning": "The English dictionary is not selected."
   },

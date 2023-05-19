@@ -35,7 +35,9 @@
       "french": "Französisch",
       "italian": "Italienisch",
       "rhaetoRomansch": "Rätoromanisch",
-      "english": "Englisch"
+      "english": "Englisch",
+      "ort": "Ort",
+      "postleitzahl": "Postleitzahl"
     },
     "source": {
       "datum": "Datum",
@@ -48,7 +50,9 @@
       "italian": "Wort (Italienisch)",
       "rhaetoRomansch": "Wort (Rätoromanisch)",
       "english": "Wort (Englisch)",
-      "other": "Übrige Zeichen"
+      "other": "Übrige Zeichen",
+      "ort": "Ort",
+      "postleitzahl": "Postleitzahl"
     },
     "notSelectedWarning": "Das Wörterbuch Deutsch ist nicht ausgewählt."
   },
