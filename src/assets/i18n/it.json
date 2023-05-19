@@ -35,7 +35,9 @@
       "french": "Francese",
       "italian": "Italiano",
       "rhaetoRomansch": "Romancio",
-      "english": "Inglese"
+      "english": "Inglese",
+      "ort": "Località",
+      "postleitzahl": "Numero postale"
     },
     "source": {
       "datum": "Data",
@@ -48,7 +50,9 @@
       "italian": "Parola (in italiano)",
       "rhaetoRomansch": "Parola (in romancio)",
       "english": "Parola (in inglese)",
-      "other": "Altri caratteri"
+      "other": "Altri caratteri",
+      "ort": "Località",
+      "postleitzahl": "Numero postale"
     },
     "notSelectedWarning": "Il dizionario italiano non è selezionato."
   },

@@ -35,7 +35,9 @@
       "french": "Français",
       "italian": "Italien",
       "rhaetoRomansch": "Rhéto-roman",
-      "english": "Anglais"
+      "english": "Anglais",
+      "ort": "Lieu",
+      "postleitzahl": "Code postale"
     },
     "source": {
       "datum": "Date",
@@ -48,7 +50,9 @@
       "italian": "Mot (italien)",
       "rhaetoRomansch": "Mot (rhéto-roman)",
       "english": "Mot (anglais)",
-      "other": "Autres caractères"
+      "other": "Autres caractères",
+      "ort": "Lieu",
+      "postleitzahl": "Code postale"
     },
     "notSelectedWarning": "Le dictionnaire français n'est pas sélectionné."
   },

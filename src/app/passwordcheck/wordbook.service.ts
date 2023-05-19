@@ -17,7 +17,9 @@ export class WordbookService {
     new Wordbook('fr', 'french', 'french', 'french.txt', [], false, true, true),
     new Wordbook('it', 'italian', 'italian', 'italian.txt', [], false, true, true),
     new Wordbook('rm', 'rhaetoRomansch', 'rhaetoRomansch', 'romansh-experimental.txt', [], false, true, true),
-    new Wordbook('en', 'english', 'english', 'english.txt', [], false, true, true)
+    new Wordbook('en', 'english', 'english', 'english.txt', [], false, true, true),
+    new Wordbook('', 'postleitzahl', 'postleitzahl', 'postcodes.txt', [], true, false, false),
+    new Wordbook('', 'ort', 'ort', 'locations.txt', [], true, false, true)
   ];
   wordbookIsUpdating = new EventEmitter<boolean>();
 
